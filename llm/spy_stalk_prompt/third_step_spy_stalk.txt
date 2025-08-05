@@ -1,0 +1,8 @@
+**Task:**
+For each **source-exfiltration pair** identified in the Shortcut's text representation:
+1. **Explain how data flows from the data collection action(s) to the exfiltration action(s)** by tracking the UUIDs.
+2. **Determine if the exfiltration could occur without the victim's knowledge**, considering the Shortcut's behavior.
+
+**Assess whether this shortcut constitute a "spy and stalk" attack**. Provide **BRIEF, CLEAR** reasoning based on the data flow, the potential for hidden actions, and the user's awareness of these actions. DO NOT USE VAGUE WORDS.
+
+**Note:** Focus on connecting data collection actions to exfiltration actions, analyze the data flow between them using the UUIDs, and consider the user's awareness and consent regarding these actions.

@@ -1,0 +1,951 @@
+Action Name,Prompt Description,Action Function
+is.workflow.actions.openapp,Open App,action_openapp
+is.workflow.actions.sendmessage,Send Message,action_sendmessage
+is.workflow.actions.dictionary,Dictionary,action_dictionary
+is.workflow.actions.gettext,Text,action_gettext
+is.workflow.actions.choosefromlist,Choose from List,action_choosefromlist
+is.workflow.actions.conditional,If,action_conditional
+is.workflow.actions.setvariable,Set Variable,action_setvariable
+is.workflow.actions.playmusic,Play Music,action_playmusic
+is.workflow.actions.showresult,Show Result,action_showresult
+is.workflow.actions.alert,Show Alert,action_alert
+is.workflow.actions.getlastphoto,Get Last Photos,action_getlastphoto
+is.workflow.actions.image.resize,Resize Image,action_resize
+is.workflow.actions.image.convert,Convert Image,action_image_convert
+is.workflow.actions.base64encode,Base64 Encode,action_base64encode
+is.workflow.actions.detect.text,Get Text From Input,action_detect_text
+is.workflow.actions.text.split,Split Text,action_text_split
+is.workflow.actions.repeat.each,Repeat with Each,action_repeat_each
+com.apple.mobiletimer-framework.MobileTimerIntents.MTCreateAlarmIntent,Add Alarm,action_create_alarm
+com.apple.mobiletimer.DeleteAlarmIntent,Delete Alarm,action_delete_alarm
+is.workflow.actions.ask,Ask for Input,action_ask
+is.workflow.actions.count,Count,action_count
+is.workflow.actions.choosefrommenu,Choose from Menu,action_choosefrommenu
+is.workflow.actions.repeat.count,Repeat,action_repeat_count
+is.workflow.actions.delay,Wait,action_delay
+is.workflow.actions.getvariable,Get Variable,action_getvariable
+is.workflow.actions.appendvariable,Add to Variable,action_appendvariable
+is.workflow.actions.list,List,action_list
+is.workflow.actions.getvalueforkey,Get Dictionary Value,action_getvalueforkey
+is.workflow.actions.setvalueforkey,Set Dictionary Value,action_setvalueforkey
+is.workflow.actions.detect.dictionary,Get Dictionary from Input,action_detect_dictionary
+is.workflow.actions.number,Number,action_number
+is.workflow.actions.number.random,Random Number between,action_number_random
+is.workflow.actions.round,Round Number,action_round
+is.workflow.actions.statistics,Calculate Statistics,action_statistics
+is.workflow.actions.measurement.create,Measurement,action_measurement_create
+is.workflow.actions.measurement.convert,Convert Measurement,action_measurement_convert
+is.workflow.actions.date,Date,action_date
+is.workflow.actions.format.date,Format Date,action_format_date
+is.workflow.actions.adjustdate,Adjust Date,action_adjustdate
+is.workflow.actions.gettimebetweendates,Get Time Between Dates,action_gettimebetweendates
+is.workflow.actions.detect.date,Get Date from Input,action_detect_date
+is.workflow.actions.converttimezone,Convert Time Zone,action_converttimezone
+is.workflow.actions.getnameofemoji,Get Name of Emoji,action_getnameofemoji
+is.workflow.actions.showdefinition,Show Definition,action_showdefinition
+is.workflow.actions.text.changecase,Change Case,action_text_changecase
+is.workflow.actions.text.combine,Combine Text,action_text_combine
+is.workflow.actions.text.replace,Replace Text,action_text_replace
+is.workflow.actions.text.match,Match Text,action_text_match
+is.workflow.actions.correctspelling,Correct Spelling,action_correctspelling
+is.workflow.actions.text.match.getgroup,Get Group from Matched Text,action_text_match_getgroup
+is.workflow.actions.dictatetext,Dictate Text,action_dictatetext
+com.apple.ShortcutsActions.TranscribeAudioAction,Transcribe Audio,action_transcribe_audio
+is.workflow.actions.speaktext,Speak Text,action_speaktext
+is.workflow.actions.makespokenaudiofromtext,Make Spoken Audio from Text,action_makespokenaudiofromtext
+is.workflow.actions.detectlanguage,Detect Language,action_detectlanguage
+is.workflow.actions.text.translate,Translate Text,action_text_translate
+is.workflow.actions.getitemname,Get Name,action_getitemname
+is.workflow.actions.setitemname,Set Name,action_setitemname
+is.workflow.actions.getitemtype,Get Type,action_getitemtype
+is.workflow.actions.getmyworkflows,Get My Shortcuts,action_getmyworkflows
+is.workflow.actions.viewresult,View Content Graph,action_viewresult
+is.workflow.actions.previewdocument,Quick Look,action_previewdocument
+is.workflow.actions.runworkflow,Run Shortcut,action_runworkflow
+is.workflow.actions.getonscreencontent,Get What's On Screen,action_getonscreencontent
+is.workflow.actions.hash,Generate Hash,action_hash
+is.workflow.actions.urlencode,URL Encode,action_urlencode
+is.workflow.actions.exit,Stop Shortcut,action_exit
+is.workflow.actions.openxcallbackurl,Open X-Callback URL,action_openxcallbackurl
+is.workflow.actions.runsshscript,Run Script over SSH,action_runsshscript
+is.workflow.actions.waittoreturn,Wait to Return,action_waittoreturn
+is.workflow.actions.output,Stop and Output,action_output
+is.workflow.actions.format.filesize,Format File Size,action_format_filesize
+is.workflow.actions.flashlight,Set Flashlight,action_flashlight
+is.workflow.actions.dnd.set,Set Focus,action_dnd_set
+is.workflow.actions.dnd.getfocus,Get Current Focus,action_dnd_getfocus
+is.workflow.actions.nothing,Nothing,action_nothing
+is.workflow.actions.bluetooth.set,Set Bluetooth,action_bluetooth_set
+is.workflow.actions.wifi.set,Set Wi-Fi,action_wifi_set
+is.workflow.actions.airplanemode.set,Set Airplane Mode,action_airplanemode_set
+is.workflow.actions.reboot,Shutdown,action_reboot
+is.workflow.actions.lowpowermode.set,Set Low Power Mode,action_lowpowermode_set
+is.workflow.actions.appearance,Set Appearance,action_appearance
+is.workflow.actions.setairdropreceiving,Set AirDrop Receiving,action_setairdroppreceiving
+is.workflow.actions.vpn.set,Set VPN,action_vpn_set
+is.workflow.actions.personalhotspot.set,Set Personal Hotspot,action_personalhotspot_set
+is.workflow.actions.cellulardata.set,Set Cellular Data,action_cellulardata_set
+is.workflow.actions.lockscreen,Lock Screen,action_lockscreen
+is.workflow.actions.nightshift.set,Set Night Shift,action_nightshift_set
+is.workflow.actions.truetone.set,Set True Tone,action_truetone_set
+is.workflow.actions.setbrightness,Set Brightness,action_setbrightness
+is.workflow.actions.orientationlock.set,Set Orientation Lock,action_orientationlock_set
+is.workflow.actions.returntohomescreen,Go to Home Screen,action_returntohomescreen
+is.workflow.actions.takephoto,Take Photo,action_takephoto
+is.workflow.actions.takevideo,Take Video,action_takevideo
+is.workflow.actions.recordaudio,Record Audio,action_recordaudio
+is.workflow.actions.takescreenshot,Take Screenshot,action_takescreenshot
+is.workflow.actions.getdevicedetails,Get Device Details,action_getdevicedetails
+is.workflow.actions.getbatterylevel,Get Battery Status,action_getbatterylevel
+com.apple.ShortcutsActions.GetOrientationAction,Get Orientation,action_getorientation
+com.apple.ShortcutsActions.GetPhysicalActivity,Get Physical Activity,action_getphysicalactivity
+is.workflow.actions.setclipboard,Copy to Clipboard,action_setclipboard
+is.workflow.actions.playsound,Play Sound,action_playsound
+is.workflow.actions.notification,Show Notification,action_notification
+is.workflow.actions.getclipboard,Get Clipboard,action_getclipboard
+is.workflow.actions.vibrate,Vibrate Device,action_vibrate
+is.workflow.actions.getipaddress,Get Current IP Address,action_getipaddress
+is.workflow.actions.getwifi,Get Network Details,action_getwifi
+is.workflow.actions.personalhotspot.password.get,Get Hotspot Password,action_personalhotspot_password_get
+com.apple.ShortcutsActions.ResetCellularDataStatisticsAction,Reset Cellular Data Statistics,action_reset_cellulardata_statistics
+is.workflow.actions.wallpaper.set,Set Wallpaper Photo,action_wallpaper_set
+is.workflow.actions.posters.get,Get All Wallpapers,action_posters_get
+is.workflow.actions.getcurrentlocation,Get Current Location,action_getcurrentlocation
+is.workflow.actions.searchlocalbusinesses,Find Places,action_searchlocalbusinesses
+is.workflow.actions.posters.switch,Switch Between Wallpapers,action_posters_switch
+is.workflow.actions.getdirections,Open Directions,action_getdirections
+is.workflow.actions.searchmaps,Open in Maps,action_searchmap
+is.workflow.actions.filter.locations,Filter Locations,action_filter_locations
+is.workflow.actions.ride.requestride,Request Ride,action_requestride
+is.workflow.actions.properties.locations,Get Details of Location,action_properties_location
+is.workflow.actions.location,Location,action_location
+is.workflow.actions.getmapslink,Get Maps URL,action_getmapslink
+is.workflow.actions.address,Street Address,action_address
+is.workflow.actions.detect.address,Get Address from Input,action_detect_address
+is.workflow.actions.getdistance,Get Distance,action_getdistance
+is.workflow.actions.gethalfwaypoint,Get Halfway Point,action_gethalfwaypoint
+is.workflow.actions.gettraveltime,Get Travel Time,action_gettraveltime
+is.workflow.actions.getparkedcarlocation,Get Parked Car Location,action_getparkedcarlocation
+is.workflow.actions.properties.parkedcar,Get Details of Parked Car,action_properties_parkedcar
+is.workflow.actions.setparkedcar,Set Parked Car,action_setparkedcar
+is.workflow.actions.share,Share,action_share
+is.workflow.actions.runextension,Share with Apps,action_runextension
+is.workflow.actions.sendemail,Send Email,action_sendemail
+is.workflow.actions.airdropdocument,AirDrop,action_airdropdocument
+com.apple.mobileslideshow.StreamShareService,Post to Shared Album,action_mobileslideshow_streamshareservice
+is.workflow.actions.generatebarcode,Generate QR Code,action_generatebarcode
+is.workflow.actions.scanbarcode,Scan QR or Barcode,action_scanbarcode
+is.workflow.actions.print,Print,action_print
+is.workflow.actions.avairyeditphoto,Markup,action_avairyeditphoto
+is.workflow.actions.makepdf,Make PDF,action_makepdf
+is.workflow.actions.compresspdf,Optimize File Size of PDF,action_compresspdf
+is.workflow.actions.splitpdf,Split PDF into Pages,action_splitpdf
+is.workflow.actions.gettextfrompdf,Get Text from PDF,action_gettextfrompdf
+is.workflow.actions.file,File,action_file
+is.workflow.actions.file.select,Select File,action_file_select
+is.workflow.actions.file.move,Move File,action_file_move
+is.workflow.actions.file.rename,Rename File,action_file_rename
+is.workflow.actions.documentpicker.save,Save File,action_documentpicker_save
+is.workflow.actions.file.delete,Delete Files,action_file_delete
+is.workflow.actions.file.getlink,Get Link to File,action_file_getlink
+is.workflow.actions.file.createfolder,Create Folder,action_file_createfolder
+is.workflow.actions.file.getfoldercontents,Get Contents of Folder,action_file_getfoldercontents
+is.workflow.actions.openin,Open File,action_openin
+is.workflow.actions.file.append,Append to Text File,action_file_append
+is.workflow.actions.makezip,Make Archive,action_makezip
+is.workflow.actions.unzip,Extract Archive,action_unzip
+is.workflow.actions.documentpicker.open,Get File from Folder,action_documentpicker_open
+is.workflow.actions.properties.files,Get Details of File,action_properties_files
+is.workflow.actions.filter.files,Filter Files,action_filter_files
+is.workflow.actions.gethtmlfromrichtext,Make HTML from Rich Text,action_gethtmlfromrichtext
+is.workflow.actions.getmarkdownfromrichtext,Make Markdown from Rich Text,action_getmarkdownfromrichtext
+is.workflow.actions.getrichtextfrommarkdown,Make Rich Text from Markdown,action_getrichtextfrommarkdown
+is.workflow.actions.getrichtextfromhtml,Make Rich Text from HTML,action_getrichtextfromhtml
+is.workflow.actions.searchweb,Search Web,action_searchweb
+is.workflow.actions.openurl,Open URLs,action_openurl
+is.workflow.actions.giphy,Find Giphy GIFs,action_giphy
+is.workflow.actions.showwebpage,Show Web View,action_showwebpage
+is.workflow.actions.readinglist,Add to Reading List,action_readinglist
+is.workflow.actions.rss,Get Items from RSS Feed,action_rss
+is.workflow.actions.rss.extract,Get RSS Feed from Page,action_rss_extract
+is.workflow.actions.filter.articles,Filter Articles,action_filter_articles
+is.workflow.actions.properties.articles,Get Details of Article,action_properties_articles
+is.workflow.actions.url,URL,action_url
+is.workflow.actions.detect.link,Get URLs from Input,action_detect_link
+is.workflow.actions.geturlcomponent,Get Component of URL,action_geturlcomponent
+is.workflow.actions.url.expand,Expand URL,action_url_expand
+is.workflow.actions.downloadurl,Get Contents of URL,action_downloadurl
+is.workflow.actions.url.getheaders,Get Headers of URL,action_url_getheaders
+is.workflow.actions.getwebpagecontents,Get Contents of Web Page,action_getwebpagecontents
+is.workflow.actions.properties.safariwebpage,Get Details of Safari Web Page,action_properties_safariwebpage
+is.workflow.actions.runjavascriptonwebpage,Run JavaScript on Active Safari Tab,action_runjavascriptonwebpage
+is.workflow.actions.filter.images,Filter Images,action_filter_images
+is.workflow.actions.properties.images,Get Details of Image,action_properties_images
+is.workflow.actions.detect.images,Get Images from Input,action_detect_images
+is.workflow.actions.makeimagefromrichtext,Make Image from Rich Text,action_makeimagefromrichtext
+is.workflow.actions.makeimagefrompdfpage,Make Image from PDF Page,action_makeimagefrompdfpage
+is.workflow.actions.extracttextfromimage,Extract Text from Image,action_extracttextfromimage
+is.workflow.actions.image.combine,Combine Images,action_image_combine
+is.workflow.actions.image.crop,Crop Image,action_image_crop
+is.workflow.actions.image.flip,Flip Image,action_image_flip
+is.workflow.actions.image.mask,Mask Image,action_image_mask
+is.workflow.actions.overlayimageonimage,Overlay Image,action_overlayimageonimage
+is.workflow.actions.overlaytext,Overlay Text,action_overlaytext
+is.workflow.actions.image.rotate,Rotate Image/Video,action_image_rotate
+is.workflow.actions.image.removebackground,Remove Image Background,action_image_removebackground
+is.workflow.actions.makegif,Make GIF,action_makegif
+is.workflow.actions.makevideofromgif,Make Video from GIF,action_makevideofromgif
+is.workflow.actions.addframetogif,Add Frame to GIF,action_addframetogif
+is.workflow.actions.getframesfromimage,Get Frames from Image,action_getframesfromimage
+is.workflow.actions.selectphoto,Select Photos,action_selectphoto
+is.workflow.actions.filter.photos,Find Photos,action_filter_photos
+is.workflow.actions.getlastvideo,Get Latest Videos,action_getlastvideo
+is.workflow.actions.getlastscreenshot,Get Latest Screenshots,action_getlastscreenshot
+is.workflow.actions.getlatestbursts,Get Latest Bursts,action_getlatestburst
+is.workflow.actions.getlatestlivephotos,Get Latest Live Photos,action_getlatestlivephotos
+is.workflow.actions.getlatestphotoimport,Get Last Import,action_getlatestphotoimport
+is.workflow.actions.removefromalbum,Remove from Photo Album,action_removefromalbum
+is.workflow.actions.deletephotos,Delete Photos,action_deletephoto
+is.workflow.actions.savetocameraroll,Save to Photo Album,action_savetocameraroll
+is.workflow.actions.encodemedia,Encode Media,action_encodemedia
+is.workflow.actions.trimvideo,Trim Media,action_trimvideo
+is.workflow.actions.setvolume,Set Volume,action_setvolume
+is.workflow.actions.pausemusic,Play/Pause,action_pausemusic
+is.workflow.actions.seek,Seek,action_seek
+is.workflow.actions.skipback,Skip Back,action_skipback
+is.workflow.actions.skipforward,Skip Forward,action_skipforward
+is.workflow.actions.listeningmode.set,Set Noise Control Mode,action_listeningmode_set
+is.workflow.actions.handoffplayback,Handoff Playback,action_handoffplayback
+is.workflow.actions.setplaybackdestination,Change Playback Destination,action_setplaybackdestination
+is.workflow.actions.exportsong,Select Music,action_exportsong
+is.workflow.actions.filter.music,Find Music,action_filter_music
+is.workflow.actions.addmusictoupnext,Add to Playing Next,action_addmusictoupnext
+is.workflow.actions.clearupnext,Clear Playing Next,action_clearupnext
+is.workflow.actions.getcurrentsong,Get Current Song,action_getcurrentsong
+is.workflow.actions.properties.music,Get Details of Music,action_properties_music
+is.workflow.actions.addtoplaylist,Add to Playlist,action_addtoplaylist
+is.workflow.actions.createplaylist,Create Playlist,action_createplaylist
+is.workflow.actions.get.playlist,Get Playlist,action_get_playlist
+is.workflow.actions.searchpodcasts,Find Podcasts,action_searchpodcasts
+is.workflow.actions.podcasts.subscribe,Follow Podcast,action_podcasts_subscribe
+is.workflow.actions.playpodcast,Play Podcast,action_playpodcast
+is.workflow.actions.getepisodesforpodcast,Get Episodes of Podcast,action_getepisodesforpodcast
+is.workflow.actions.getpodcastsfromlibrary,Get Podcasts from Library,action_getpodcastsfromlibrary
+is.workflow.actions.properties.podcastshow,Get Details of Podcast,action_properties_podcasthow
+is.workflow.actions.properties.podcast,Get Details of Podcast Episode,action_properties_podcast
+is.workflow.actions.searchappstore,Find Apple Store Apps,action_searchappstore
+is.workflow.actions.properties.appstore,Get Details of Apple Store App,action_properties_appstore
+is.workflow.actions.filter.health.quantity,Find Health Samples,action_filter_health_quality
+is.workflow.actions.health.quantity.log,Log Health Sample,action_health_quantity_log
+is.workflow.actions.health.workout.log,Log Workout,action_health_workout_log
+is.workflow.actions.properties.health.quantity,Get Details of Health Sample,action_properties_health_quantity
+is.workflow.actions.addnewcalendar,Add New Calendar,action_addnewcalendar
+is.workflow.actions.addnewevent,Add New Event,action_addnewevent
+is.workflow.actions.setters.calendarevents,Edit Calendar Event,action_setters_calendarevents
+is.workflow.actions.filter.eventattendees,Filter Event Attendees,action_filter_eventattendees
+is.workflow.actions.properties.calendarevents,Get Details of Calendar Events,action_properties_calendarevents
+is.workflow.actions.properties.eventattendees,Get Details of Event Attendees,action_properties_eventattendees
+is.workflow.actions.getupcomingevents,Get Upcoming Events,action_getupcomingevents
+is.workflow.actions.showincalendar,Open in Calendar,action_showincalendar
+is.workflow.actions.removeevents,Remove Events,action_removeevents
+com.apple.mobilecal.SetCalendarFocusConfiguration,Set Calendar Focus Filter,action_set_calendar_focus
+is.workflow.actions.filter.calendarevents,Find Calendar Events,action_filter_calendarevents
+com.apple.mobiletimer-framework.MobileTimerIntents.MTGetAlarmsIntent,Find Alarms,action_filter_alarms
+com.apple.mobiletimer.EditSleepAlarmIntent,Edit Sleep Alarm,action_edit_alarm
+com.apple.mobiletimer-framework.MobileTimerIntents.MTToggleAlarmIntent,Toggle Alarm,action_toggle_turn_alarm
+com.apple.mobiletimer.LapStopwatchIntent,Lap Stopwatch,action_lap_stopwatch
+com.apple.mobiletimer.ResetStopwatchIntent,Reset Stopwatch,action_reset_stopwatch
+com.apple.mobiletimer.StartStopwatchIntent,Start Stopwatch,action_start_stopwatch
+com.apple.mobiletimer.StopStopwatchIntent,Stop Stopwatch,action_stop_stopwatch
+com.apple.mobiletimer.OpenTab,Open Tab,action_opentab
+com.apple.mobiletimer.CancelTimerIntent,Cancel Timer,action_cancel_timer
+com.apple.mobiletimer.GetCurrentTimerDetailsIntent,Get Current Timer,action_get_detail_timer
+com.apple.mobiletimer.PauseTimerIntent,Pause Timer,action_pause_timer
+com.apple.mobiletimer.ResumeTimerIntent,Resume Timer,action_resume_timer
+is.workflow.actions.timer.start,Start Timer,action_timer_start
+com.apple.facetime.facetime,FaceTime,action_facetime
+is.workflow.actions.homeaccessory,Control Home,action_homeaccessory
+is.workflow.actions.gethomeaccessorystate,Get State of Home,action_gethomeaccessory
+is.workflow.actions.intercom,Intercom,action_intercom
+is.workflow.actions.email,Email Address,action_email
+is.workflow.actions.detect.emailaddress,Get Email Address from Input,action_detect_emailaddress
+com.apple.mobilemail.OpenMailboxEntityAction,Open Mailbox,action_open_mailbox
+com.apple.mobilemail.SearchMessagesAction,Search in Mail,action_search_message_mail
+is.workflow.actions.selectemail,Select Email Address,action_selectemail
+com.apple.mobilemail.MailFocusConfigurationAction,Set Mail Focus Filter,action_change_focus_mail
+is.workflow.actions.useractivity.open,Open User Activity,action_user_activity_open
+is.workflow.actions.appendnote,Append to Note,action_appendnote
+com.apple.mobilenotes.SharingExtension,Create Note,action_createnote
+com.apple.mobilenotes.DeleteNotesLinkAction,Delete Notes,action_deletenote
+is.workflow.actions.filter.notes,Find Notes,action_filter_notes
+is.workflow.actions.shownote,Open Note,action_shownote
+com.apple.mobilenotes.PinNotesLinkAction,Pin Notes,action_add_to_pinnote
+com.apple.mobilenotes.ICNotesFolderIntent,Show Notes Folder,action_show_notefolder
+com.apple.mobilenotes.ShowQuickNoteIntent,Show Quick Note,action_show_quicknote
+com.apple.mobilenotes.OpenAccountLinkAction,Open Account,action_note_openaccount
+com.apple.mobilenotes.ChangeSettingLinkAction,Change Notes Setting,action_note_changesetting
+com.apple.mobilenotes.OpenAppLocationLinkAction,Open Notes View,action_open_view_note
+com.apple.mobilenotes.CreateFolderLinkAction,Create Folder,action_create_note_folder
+com.apple.mobilenotes.DeleteFoldersLinkAction,Delete Folders,action_delete_note_folder
+com.apple.mobilenotes.MoveNotesToFolderLinkAction,Move Notes to Folder,action_move_notes
+com.apple.mobilenotes.AddTagsToNotesLinkAction,Add Tags to Notes,action_add_tag_notes
+com.apple.mobilenotes.DeleteTagsLinkAction,Delete Tags,action_delete_tag_notes
+com.apple.mobilenotes.CreateTagLinkAction,Create Tag,action_create_tag_notes
+com.apple.mobilenotes.OpenTagLinkAction,Open Tag,action_open_tag_notes
+com.apple.mobilenotes.RemoveTagsFromNotesLinkAction,Remove Tags from Notes,action_remove_tag_notes
+is.workflow.actions.weather.currentconditions,Get Current Weather,action_weather_currentconditions
+is.workflow.actions.weather.forecast,Get Weather Forecast,action_weather_forecast
+is.workflow.actions.properties.weather.conditions,Get Details of Weather Conditions,action_weather_condition
+com.apple.weather.OpenNotificationsConfigurationIntent,Open Notifications Configuration,action_weather_notification
+com.apple.weather.WeatherIntent,Show Weather,action_weather_weatherintent
+com.apple.Passbook.OpenPassIntent,Open Card,action_open_card
+is.workflow.actions.openpasswords,Show Passwords,action_openpasswords
+is.workflow.actions.venmo.request,Request Money,action_venmo_request
+is.workflow.actions.venmo.pay,Send Payment,action_venmo_pay
+com.apple.ShortcutsActions.SetDataRoamingAction,Set Data Roaming,action_setdataroaming
+com.apple.AccessibilityUtilities.AXSettingsShortcuts.AXToggleLEDFlashIntent,Set LED Flash,action_setting_flashlight
+com.apple.AccessibilityUtilities.AXSettingsShortcuts.AXToggleClassicInvertIntent,Set Classic Invert,action_setting_classicinvert
+com.apple.AccessibilityUtilities.AXSettingsShortcuts.AXToggleColorFiltersIntent,Set Color Filters,action_setting_colorfilter
+com.apple.AccessibilityUtilities.AXSettingsShortcuts.AXToggleContrastIntent,Set Increase Contrast,action_setting_increasecontrast
+com.apple.AccessibilityUtilities.AXSettingsShortcuts.AXToggleSmartInvertIntent,Set Smart Invert,action_setting_smartinvert
+com.apple.AccessibilityUtilities.AXSettingsShortcuts.AXSetLargeTextIntent,Set Text Size,action_setting_textsize
+com.apple.AccessibilityUtilities.AXSettingsShortcuts.AXToggleAutoAnswerCallsIntent,Auto-Answer Calls,action_setting_autoanswer
+com.apple.AccessibilityUtilities.AXSettingsShortcuts.AXSetBackgroundSoundIntent,Change Background Sounds,action_setting_backgroundsound
+com.apple.Preferences.DeveloperSettingsDeepLink,Find Developer Settings,action_setting_develpersetting
+com.apple.AccessibilityUtilities.AXSettingsShortcuts.AXStartMagnifierIntent,Open Magnifier,action_setting_magnifier
+com.apple.Preferences.OpenSoundsAndHapticsDeepLinks,Open Sounds & Haptics Settings,action_setting_opens
+com.apple.AccessibilityUtilities.AXSettingsShortcuts.AXToggleAssistiveTouchIntent,Set AssistiveTouch,action_setting_assistivetouch
+com.apple.AccessibilityUtilities.AXSettingsShortcuts.AXToggleAudioDescriptionsIntent,Set Audio Descriptions,action_setting_audiodescription
+com.apple.AccessibilityUtilities.AXSettingsShortcuts.AXSetBackgroundSoundVolumeIntent,Set Background Sound Volume,action_setting_backgroundsounds
+com.apple.AccessibilityUtilities.AXSettingsShortcuts.AXSetLeftRightBalanceIntent,Set Left/Right Audio Balance,action_setting_leftrightbalance
+com.apple.AccessibilityUtilities.AXSettingsShortcuts.AXToggleCaptionsIntent,Set Closed Captions+SDH,action_setting_captionssdh
+is.workflow.actions.comment,Comment,action_comment
+is.workflow.actions.format.number,Format Number,action_format_number
+is.workflow.actions.detect.number,Get Number from Input,action_detect_number
+is.workflow.actions.math,Calculate,action_math
+is.workflow.actions.calculateexpression,Calculate Expression,action_calculateexpression
+com.apple.mobilephone.call,Call,action_call
+net.whatsapp.WhatsApp.send,Send WhatsApp Message,action_whatsapp_send
+net.whatsapp.WhatsApp.openin,Send Photo via WhatsApp,action_whatsapp_openin
+is.workflow.actions.addnewreminder,Add New Reminder,action_addnewreminder
+com.apple.reminders.TTRCreateListAppIntent,Create Reminder List,action_create_remainderlist
+is.workflow.actions.setters.reminders,Edit Reminder,action_setters_reminders
+is.workflow.actions.filter.reminders,Find Reminders,action_filter_reminders
+is.workflow.actions.properties.reminders,Get Details of Reminder,action_properties_reminders
+is.workflow.actions.getupcomingreminders,Get Upcoming Reminders,action_getupcomingreminders
+is.workflow.actions.reminders.showlist,Open Reminders List,action_reminders_showlist
+com.apple.reminders.TTROpenSmartListAppIntent,Open Smart List,action_open_smartlist
+is.workflow.actions.removereminders,Remove Reminders,action_removereminders
+com.apple.reminders.TTRSearchRemindersAppIntent,Search Reminders,action_search_inreminder
+com.alexhay.ToolboxProForShortcuts.CreateMatteIntent,External App Actions,action_external_app
+com.alexhay.ToolboxProForShortcuts.AverageColourIntent,External App Actions,action_external_app
+com.apple.VoiceMemos.RecordVoiceMemoIntent,Create Recoding,action_create_recording
+is.workflow.actions.sirikit.donation.handle,Create Recording,action_create_recording
+com.apple.VoiceMemos.PlaybackVoiceMemoIntent,Play Recording,action_play_recording
+com.apple.VoiceMemos.ChangeRecordingPlaybackSetting,Change Recording Playback Setting,action_change_setting_recording
+com.apple.VoiceMemos.SelectRecording,Select Recording,action_select_recording
+com.apple.VoiceMemos.StopRecording,Stop Recording,action_stop_recording
+com.apple.VoiceMemos.DeleteRecording,Delete Recording,action_delete_recording
+is.workflow.actions.selectcontacts,Select Contact,action_selectcontacts
+is.workflow.actions.selectphone,Select Phone Number,action_selectphone
+is.workflow.actions.contacts,Contacts,action_contacts
+is.workflow.actions.filter.contacts,Find Contacts,action_filter_contacts
+is.workflow.actions.detect.phonenumber,Get Phone Number from Input,action_detect_phonenumber
+com.burbn.instagram.openin,Post on Instagram,action_external_app
+is.workflow.actions.tweet,Tweet,action_external_app
+com.google.chrome.ios.OpenInChromeIntent,Open URLs in Chrome,action_external_app
+is.workflow.actions.shazamMedia,Recognize Music,action_external_app
+com.apple.TVRemoteUIService.LaunchApplicationIntent,Open TV App,action_external_app
+com.apple.TVRemoteUIService.LaunchRemoteIntent,Open Remote Control TV,action_external_app
+is.workflow.actions.alarm.create,Create Alarm,action_create_alarm
+is.workflow.actions.alarm.toggle,Toggle Alarm,action_toggle_turn_alarm
+com.openai.chat.AskIntent,Ask ChatGPT,action_external_app
+is.workflow.actions.detect.contacts,Get Contacts from Input,action_detect_contacts
+is.workflow.actions.getarticle,Get Article,action_getarticle
+com.rivian.ios.consumer.OpenFrunkIntent,Open Frunk,action_external_app
+com.apple.mobilesafari.CloseTab,Close Safari Tab,action_safari_closetab
+com.apple.TVRemoteUIService.WakeAppleTVIntent,Wake Apple TV,action_external_app
+com.apple.TVRemoteUIService.SleepAppleTVIntent,Sleep Apple TV,action_external_app
+com.rivian.ios.consumer.CloseFrunkIntent,Close Frunk,action_external_app
+is.workflow.actions.openworkflow,Open Shortcut,action_openworkflow
+is.workflow.actions.photos.createalbum,Create Album,action_photo_createalbum
+is.workflow.actions.gettypeaction,Get Item Type,action_gettypeaction
+com.sindresorhus.Actions.IsReachableIntent,Check Connection,action_external_app
+com.google.chrome.ios.openurl,Open URL in Chrome,action_external_app
+com.alexhay.ToolboxProForShortcuts.CropIntent,Crop,action_external_app
+dk.simonbs.Scriptable.RunScriptInlineIntent,Run Script,action_external_app
+is.workflow.actions.properties.contacts,Get Details of Contact,action_properties_contacts
+is.workflow.actions.pocket.add,Add to Pocket,action_external_app
+is.workflow.actions.folder,Folder,action_file
+is.workflow.actions.phonenumber,Phone Number,action_phonenumber
+is.workflow.actions.postonfacebook,Post on Facebook,action_external_app
+is.workflow.actions.imgur.upload,Upload to Imgur,action_external_app
+com.microsoft.msedge.OpenInChromeIntent,Open in Chrome,action_external_app
+com.apple.Pages.TSADocumentOpenIntent,Open Pages Document,action_external_app
+com.apple.TVRemoteUIService.PauseContentIntent,Pause Content on TV,action_external_app
+com.apple.TVRemoteUIService.SkipContentIntent,Skip Content on TV,action_external_app
+com.apple.TVRemoteUIService.LaunchScreenSaverIntent,Launch Screen Saver on TV,action_external_app
+com.apple.TVRemoteUIService.SwitchUserAccountIntent,Switch User Account on TV,action_external_app
+com.apple.TVRemoteUIService.ToggleSystemAppearanceIntent,Toggle System Appearance on TV,action_external_app
+com.apple.TVRemoteUIService.ToggleCaptionsIntent,Toggle Captions on TV,action_external_app
+com.apple.TVRemoteUIService.ReduceLoudSoundsIntent,Reduce Loud Sounds on TV,action_external_app
+is.workflow.actions.searchitunes,Find iTunes Store Items,action_searchitunes
+is.workflow.actions.properties.itunesstore,Get Details of iTunes Store Item,action_properties_itunes
+is.workflow.actions.showinstore,Show in iTunes Store,action_showinstore
+com.apple.shortcuts.SearchShortcutsAction,Search in Shortcuts,action_search_shortcut
+com.alexhay.ToolboxProForShortcuts.TrimTextIntent,Trim Text,action_external_app
+com.alexhay.ToolboxProForShortcuts.InternetConnectionIntent,Check Internet Connection,action_external_app
+com.alexhay.ToolboxProForShortcuts.IsVPNConnectedIntent,Check VPN Connection,action_external_app
+com.alexhay.ToolboxProForShortcuts.DeviceStorageIntent,Get Device Storage,action_external_app
+com.alexhay.ToolboxProForShortcuts.CheckIfInstalledIntent,Check if App Installed,action_external_app
+com.alexhay.ToolboxProForShortcuts.SortListIntent,Sort List,action_external_app
+com.alexhay.ToolboxProForShortcuts.ViewMapIntent,View Map,action_external_app
+com.alexhay.ToolboxProForShortcuts.DeviceDetailsIntent,Get Device Details,action_external_app
+com.alexhay.ToolboxProForShortcuts.PerformCalculationIntent,Calculate,action_external_app
+com.alexhay.ToolboxProForShortcuts.DeviceLanguageIntent,Get Device Language,action_external_app
+com.alexhay.ToolboxProForShortcuts.BatteryStatusIntent,Get Battery Status,action_external_app
+com.alexhay.ToolboxProForShortcuts.QuickLookExtendedIntent,Quick Look,action_external_app
+com.apple.shortcuts.DeleteWorkflowAction,Delete Shortcut,action_deleteworkflow
+com.apple.shortcuts.CreateWorkflowAction,Create Shortcut,action_create_shortcut
+is.workflow.actions.evernote.get,Get EverNote,action_external_app
+is.workflow.actions.evernote.delete,Delete EverNote,action_external_app
+is.workflow.actions.evernote.append,Append to EverNote,action_external_app
+com.winterowls.Night-Shift.RandomWallpaperIntent,Random Wallpaper,action_external_app
+com.apple.ShortcutsActions.SetSilentModeAction,Set Silent Mode,action_toggle_turnsilentmode
+com.apple.musicrecognition.RecognizeMusicIntent,Recognize Music,action_recognize_music
+com.brave.ios.browser.OpenWebsiteIntent,Open Website in Brave,action_external_app
+com.google.GoogleMobile.GoogleForQueryIntent,Search Google for,action_external_app
+is.workflow.actions.dismisssiri,Dismiss Siri and Continue,action_dismisssiri
+net.shinyfrog.bear-IOS.create,Create Note on Shinyfrog,action_external_app
+is.workflow.actions.runapplescript,Run AppleScript,action_external_app
+com.apple.DocumentsApp.SearchFile,Search in Files,action_searchfile
+com.apple.mobilesafari.TabEntity,Find Tabs,action_filter_tab
+com.sindresorhus.Actions.IsOnlineIntent,Is Online,action_external_app
+com.sindresorhus.Actions.Authenticate,Is Web Server Reachable,action_external_app
+com.sindresorhus.Actions.RemoveNonPrintableCharactersIntent,Remove Non-Printable Characters,action_external_app
+com.sindresorhus.Actions.RemoveEmojiIntent,Remove Emoji,action_external_app
+com.sindresorhus.Actions.TransformTextIntent,Transform Text,action_external_app
+is.workflow.actions.workout.start,Start Workout,action_health_workout_log
+is.workflow.actions.stocks.quote,Get Stock Price,action_stock_quote
+com.tijo.opener.Opener.show-options,Open URL in Opener,action_external_app
+com.apple.iBooks.BookAppEntity,Open Book,action_external_app
+com.apple.AccessibilityUtilities.AXSettingsShortcuts.AXToggleZoomIntent,Set Zoom,action_setting_zoom
+com.tapbots.Tweetbot.tweet,Tweet with Tweetbot,action_external_app
+com.culturedcode.ThingsTouch.addtask,Add ToDo on Things 3,action_external_app
+dk.simonbs.DataJar.GetValueIntent,Get DataJar Value,action_external_app
+dk.simonbs.DataJar.SetValueIntent,Set DataJar Value,action_external_app
+com.sindresorhus.Actions.IsCellularDataOn,Is Cellular Data On,action_external_app
+com.sindresorhus.Actions.IsBluetoothOnIntent,Is Bluetooth On,action_external_app
+com.sindresorhus.Actions.IsConnectedToVPNIntent,Is Connected to VPN,action_external_app
+com.sindresorhus.Actions.IsLowPowerModeIntent,Is Low Power Mode On,action_external_app
+com.sindresorhus.Actions.IsSilentModeOnIntent,Is Silent Mode On,action_external_app
+com.sindresorhus.Actions.IsDarkModeIntent,Is Dark Mode On,action_external_app
+com.sindresorhus.Actions.GetDeviceOrientationIntent,Get Device Orientation,action_external_app
+com.sindresorhus.Actions.GetActionsVersion,Get Actions Version,action_external_app
+com.sindresorhus.Actions.GetBatteryStateIntent,Get Battery State,action_external_app
+com.sindresorhus.Actions.GetDeviceDetailsExtended,Get Device Details Extended,action_external_app
+com.apple.AccessibilityUtilities.AXSettingsShortcuts.AXToggleSoundDetectionIntent,Set Sound Detection,action_setting_soundrecognition
+com.apple.news.TagIntent,Open News,action_external_app
+com.omnigroup.OmniFocus2.iPhone.pastetaskpaper,Add TaskPaper to OmniFocus,action_external_app
+com.apple.AccessibilityUtilities.AXSettingsShortcuts.AXStartGuidedAccessIntent,Start Guided Access,action_start_guidedaccess
+com.apple.AccessibilityUtilities.AXSettingsShortcuts.AXToggleVoiceControlIntent,Set Voice Control,action_turn_voicecontrol
+com.apple.shortcuts.ResetCellularDataStatisticsAction,Reset Cellular Data Statistics,action_reset_cellulardata_statistics
+com.apple.AccessibilityUtilities.AXSettingsShortcuts.AXToggleLiveCaptionsIntent,Set Live Captions,action_setting_livecaption
+is.workflow.actions.pocket.get,Get Item from Pocket,action_external_app
+com.6X.LockLauncher.RefreshActivityIntent,Refresh Activity,action_external_app
+com.adguard.ios.AdGuardVPN.VpnStateIntent,Get VPN State,action_external_app
+dk.simonbs.DataJar.CheckIfValueExistsIntent,Check If Value Exists,action_external_app
+com.apple.AccessibilityUtilities.AXSettingsShortcuts.AXToggleMonoAudioIntent,Set Mono Audio,action_setting_monoaudio
+is.workflow.actions.announcenotifications.set,Set Announce Notifications,action_setting_announcenotification
+com.apple.NanoSettings.NPRFPingMyPhoneIntent,Ping My Phone with lights on Watch,action_pingmyphone
+com.apple.NanoSettings.NPRFSetFlashLightIntent,Set Flashlight on Watch,action_setflashlight
+com.apple.NanoSettings.NPRFSetTheaterModeIntent,Set Theater Mode on Watch,action_theatermode
+com.apple.NanoSettings.NPRFSetWaterLockIntent,Set Water Lock on Watch,action_set_waterlock
+com.apple.NanoSettings.NPRFSetSchoolTimeIntent,Set School Time on Watch,action_set_schooltime
+com.todoist.ios.CreateTaskIntent,Create Task on Todoist,action_external_app
+com.leomehlig.today.AddTaskIntent,Add Task on Today,action_external_app
+com.rivian.ios.consumer.CloseLiftgateIntent,Close Liftgate,action_external_app
+com.phocusllp.due.add,Add Reminder on Due,action_external_app
+io.pushcut.Pushcut.RunShortcutIntent,Run Shortcut on Pushcut,action_external_app
+com.apple.AccessibilityUtilities.AXSettingsShortcuts.AXToggleVoiceOverIntent,Set VoiceOver,action_setting_voiceover
+com.rivian.ios.consumer.UnlockDoorsIntent,Unlock Doors,action_external_app
+com.microsoft.bing.OpenSydneyIntent,Open Sydney on Bing,action_external_app
+is.workflow.actions.runscene,Run Home Scene,action_health_workout_log
+com.sindresorhus.Actions.BlurImages,Blur Images,action_external_app
+com.alexhay.ToolboxProForShortcuts.AuthenticateIntent,Authenticate,action_external_app
+is.workflow.actions.trello.add.card,Add Card on Trello,action_external_app
+is.workflow.actions.personalhotspot.password.set,Set Hotspot Password,action_personalhotspot_password_get
+com.apple.iBooks.openin,Open in iBooks,action_external_app
+is.workflow.actions.dropbox.open,Open in Dropbox,action_external_app
+is.workflow.actions.addnewcontact,Add New Contact,action_add_new_contact
+is.workflow.actions.setters.contacts,Edit Contact,action_set_contact
+com.rivian.ios.consumer.LockDoorsIntent,Lock Doors,action_external_app
+com.apple.ShortcutsActions.OpenCameraAction,Open Camera Mode,action_open_camera
+is.workflow.actions.trello.get,Get Trello,action_external_app
+is.workflow.actions.properties.trello,Get Details of Trello,action_external_app
+com.sindresorhus.Actions.GetAudioPlaybackDestinationIntent,Get Audio Playback Destination,action_external_app
+com.sindresorhus.Actions.GetAverageColorOfImage,Get Average Color of Image,action_external_app
+com.sindresorhus.Actions.CreateColorImageIntent,Create Color Image,action_external_app
+company.thebrowser.ArcMobile2.SearchIntent,Search in Arc Mobile,action_external_app
+com.apple.Keynote.KNDocumentPlayIntent,Play Keynote,action_external_app
+com.alexhay.ToolboxProForShortcuts.GetWorkoutsIntent,Get Workouts,action_external_app
+com.rivian.ios.consumer.OpenLiftgateIntent,Open Liftgate,action_external_app
+is.workflow.actions.todoist.add,Add Todoist Item,action_external_app
+com.apple.AccessibilityUtilities.AXSettingsShortcuts.AXToggleBackgroundSoundsIntent,Set Background Sounds,action_setting_setbackgroundsound
+com.sindresorhus.Actions.IsShakingDevice,Is Shaking Device,action_external_app
+is.workflow.actions.text.trimwhitespace,Trim Whitespace,action_trim
+com.apple.ShortcutsActions.SetVoiceDataModeAction,Set Voice Data Mode,action_set_voice_data_mode
+com.apple.ShortcutsActions.ToggleCellularPlanAction,Toggle Cellular Plan,action_toggle_cellular_plan
+com.alexhay.ToolboxProForShortcuts.GlobalVariablesIntent,Global Variables,action_external_app
+com.sindresorhus.Actions.IsDeviceLocked,Is Device Locked,action_external_app
+com.sindresorhus.Actions.WriteTextIntent,Write Text,action_external_app
+com.apple.shortcuts.OpenWorkflowAction,Open Shortcut,action_openworkflow
+AsheKube.app.a-Shell.ExecuteCommandIntent,Execute Command in a-Shell,action_external_app
+com.apple.AccessibilityUtilities.AXSettingsShortcuts.AXSetSoundDetectorIntent,Set Recognized Sounds,action_setting_recognized_sound
+com.sindresorhus.Actions.WaitMilliseconds,Wait,action_external_app
+com.sindresorhus.Actions.IsAudioPlayingIntent,Is Audio Playing,action_external_app
+com.apple.DocumentsApp.ScanDocument,Scan Document,action_scan_doc
+com.sindresorhus.Actions.ScanDocumentsIntent,Scan Documents through Sindresorhus,action_external_app
+com.sindresorhus.Actions.GetEmojisIntent,Get Emojis through Sindresorhus,action_external_app
+com.sindresorhus.Actions.SetUniformTypeIdentifier,Set Uniform Type Identifier,action_external_app
+com.sindresorhus.Actions.GetUniformTypeIdentifierIntent,Get Uniform Type Identifier,action_external_app
+com.apple.shortcuts.AddShortcutToHomeScreenAction,Add Shortcut to Home Screen,action_add_workflow_to_screen
+com.omnigroup.OmniFocus3.iOS.AddTaskIntent,Add Task on OmniFocus 3,action_external_app
+AsheKube.app.a-Shell-mini.PutFileIntent,Put File in a-Shell Mini,action_external_app
+AsheKube.app.a-Shell-mini.ExecuteCommandIntent,Execute Command in a-Shell Mini,action_external_app
+AsheKube.app.a-Shell-mini.GetFileIntent,Get File in a-Shell Mini,action_external_app
+com.apple.Numbers.TNiOSAddValuesToFormIntent,Add Values to Numbers Form,action_external_app
+com.brogrammers.charty.AddCustomThemeIntent,Add Custom Theme in Charty,action_external_app
+dk.simonbs.DataJar.InsertValueInArrayIntent,Insert Value in Array in DataJar,action_external_app
+com.alexhay.ToolboxProForShortcuts.HomeIntent,Home in Toolbox Pro,action_external_app
+com.bloombuilt.dayone-ios.FindEntriesIntent,Find Entries in Day One,action_external_app
+com.bloombuilt.dayone-ios.AppendToEntryIntent,Append to Entry in Day One,action_external_app
+is.workflow.actions.dropbox.savefile,Save File in Dropbox,action_external_app
+com.flexibits.fantastical2.addevent,Add Event in Fantastical 2,action_external_app
+net.shinyfrog.bear-IOS.add,Add Note in Shinyfrog,action_external_app
+is.workflow.actions.instapaper.add,Add to Instapaper,action_external_app
+ai.perplexity.app.QueryPerplexity,Search on Perplexity AI,action_external_app
+com.apple.Numbers.TNiOSAddValuesToSpreadsheetIntent,Add Values to Numbers Spreadsheet,action_external_app
+dk.simonbs.DataJar.GetKeysIntent,Get Keys in DataJar,action_external_app
+dk.simonbs.DataJar.GetTypeOfValueIntent,Get Type of Value in DataJar,action_external_app
+dk.simonbs.DataJar.ViewValueIntent,View Value in DataJar,action_external_app
+com.alexhay.ToolboxProForShortcuts.QuickMenu2Intent,Quick Menu 2 in Toolbox Pro,action_external_app
+com.bloombuilt.dayone-ios.CreateEntryIntent,Create Entry in Day One,action_external_app
+com.sindresorhus.Actions.CreateMenuItem,Create Menu Item through Sindresorhus,action_external_app
+is.workflow.actions.evernote.new,New Evernote,action_external_app
+com.apple.clock.DeleteAlarmIntent,Delete Alarm,action_delete_alarm
+com.alexhay.ToolboxProForShortcuts.ReverseListIntent,Reverse List in Toolbox Pro,action_external_app
+com.alexhay.ToolboxProForShortcuts.IsPremiumUnlockedIntent,Is Premium Unlocked in Toolbox Pro,action_external_app
+com.alexhay.ToolboxProForShortcuts.AddToListIntent,Add to List in Toolbox Pro,action_external_app
+ke.bou.WidgetPack.ImageFileIntent,Image File in WidgetPack,action_external_app
+ke.bou.WidgetPack.ModifierClipShapeIntent,Modifier Clip Shape in WidgetPack,action_external_app
+ke.bou.WidgetPack.ModifierScaledToFitIntent,Modifier Scaled to Fit in WidgetPack,action_external_app
+ke.bou.WidgetPack.ZStackIntent,ZStack in WidgetPack,action_external_app
+ke.bou.WidgetPack.UpdateWidgetIntent,Update Widget in WidgetPack,action_external_app
+com.alipay.iphoneclient.StartScanIntent,Start Scan in Alipay,action_external_app
+com.alipay.iphoneclient.StartPayIntent,Start Pay in Alipay,action_external_app
+is.workflow.actions.getclassaction,Get Object of Class,action_get_object_ofclass
+com.juniperphoton.MyerList.AddReminderAppIntent,Add Reminder in MyerList,action_external_app
+com.juniperphoton.MyerList.EndLiveActivityIntent,End Live Activity in MyerList,action_external_app
+app.surfed.app.OpenURLIntent,Open URL in Surfed,action_external_app
+com.bloombuilt.dayone-mac.CreateEntryIntent,Create Entry in Day One Mac,action_external_app
+com.sindresorhus.Actions.GlobalVariableSetNumber,Global Variable Set Number through Sindresorhus,action_external_app
+com.sindresorhus.Actions.GlobalVariableGetNumber,Global Variable Get Number through Sindresorhus,action_external_app
+com.sindresorhus.Actions.GetIndexOfListItem,Get Index of List Item through Sindresorhus,action_external_app
+com.sindresorhus.Actions.HideShortcutsAppIntent,Hide Shortcuts App through Sindresorhus,action_external_app
+com.sindresorhus.Actions.PrettyPrintDictionariesIntent,Pretty Print Dictionaries through Sindresorhus,action_external_app
+com.sindresorhus.Actions.AddToListIntent,Add to List through Sindresorhus,action_external_app
+dk.simonbs.DataJar.DeleteValueIntent,Delete Value in DataJar,action_external_app
+com.sindresorhus.Actions.DateToUnixTimeIntent,Date to Unix Time through Sindresorhus,action_external_app
+com.sindresorhus.Actions.RemoveDuplicatesFromListIntent,Remove Duplicates from List through Sindresorhus,action_external_app
+dk.simonbs.DataJar.GetChildCountIntent,Get Child Count in DataJar,action_external_app
+com.sindresorhus.Actions.FilterListIntent,Filter List through Sindresorhus,action_external_app
+ke.bou.WidgetPack.ColorIntent,Color through WidgetPack,action_external_app
+ke.bou.WidgetPack.VerbatimTextIntent,Verbatim Text in WidgetPack,action_external_app
+ke.bou.WidgetPack.ModifierFontIntent,Modifier Font in WidgetPack,action_external_app
+ke.bou.WidgetPack.HorizontalStackIntent,Horizontal Stack in WidgetPack,action_external_app
+ke.bou.WidgetPack.ModifierFixedFrameIntent,Modifier Fixed Frame in WidgetPack,action_external_app
+ke.bou.WidgetPack.SpacerIntent,Spacer in WidgetPack,action_external_app
+ke.bou.WidgetPack.FontIntent,Font in WidgetPack,action_external_app
+ke.bou.WidgetPack.ModifierPaddingIntent,Modifier Padding in WidgetPack,action_external_app
+ke.bou.WidgetPack.LinkIntent,Link in WidgetPack,action_external_app
+ke.bou.WidgetPack.VerticalStackIntent,Vertical Stack in WidgetPack,action_external_app
+ke.bou.WidgetPack.ModifierBackgroundIntent,Modifier Background in WidgetPack,action_external_app
+ke.bou.WidgetPack.PreviewWidgetIntent,Preview Widget in WidgetPack,action_external_app
+com.alexhay.ToolboxProForShortcuts.CreateMenuIntent,Create Menu in Toolbox Pro,action_external_app
+com.alexhay.ToolboxProForShortcuts.HapticFeedbackIntent,Haptic Feedback in Toolbox Pro,action_external_app
+com.apple.NanoSettings.NPRFSetAlwaysOnIntent,Set Watch Always On,action_external_app
+com.apple.NanoSettings.NPRFSetSilentModeIntent,Set Watch Silent Mode,action_external_app
+com.apple.PBBridgeSupport.BridgeIntents.COSSetGizmoFaceIntent,Set Watch Face,action_external_app
+DesignTech-SIA.Spendit.AI_AddTransactionIntent,Add Transaction in Spendit AI,action_external_app
+DesignTech-SIA.Spendit.AI_ViewAccountIntent,View Account in Spendit AI,action_external_app
+com.sindresorhus.Actions.GetUnsplashImageIntent,Get Unsplash Image through Sindresorhus,action_external_app
+com.alexhay.ToolboxProForShortcuts.BlurImagesIntent,Blur Images in Toolbox Pro,action_external_app
+com.google.chrome.ios.OpenInChromeIncognitoIntent,Open in Chrome Incognito,action_external_app
+com.apple.news.TodayIntent,Open News Today,action_external_app
+com.alexhay.ToolboxProForShortcuts.IsAudioPlayingIntent,Is Audio Playing in Toolbox Pro,action_external_app
+com.alexhay.ToolboxProForShortcuts.CheckForUpdatesIntent,Check for Updates in Toolbox Pro,action_external_app
+com.alexhay.ToolboxProForShortcuts.ShowNotificationIntent,Show Notification in Toolbox Pro,action_external_app
+is.workflow.actions.properties.workflow,Get Details of Workflow,action_properties_appstore
+com.alexhay.ToolboxProForShortcuts.CheckGVIntent,Check GV in Toolbox Pro,action_external_app
+com.alexhay.ToolboxProForShortcuts.GetReminderListsIntent,Get Reminder Lists in Toolbox Pro,action_external_app
+com.alexhay.ToolboxProForShortcuts.GetReminderIDIntent,Get Reminder ID in Toolbox Pro,action_external_app
+com.alexhay.ToolboxProForShortcuts.EditReminderIntent,Edit Reminder in Toolbox Pro,action_external_app
+maccatalyst.com.Christopher-Hannah.Text-Case.TextCaseIntent,Text Case in Text Case,action_external_app
+com.alexhay.ToolboxProForShortcuts.CreateIconIntent,Create Icon in Toolbox Pro,action_external_app
+net.shinyfrog.bear-IOS.open,Open on Shinyfrog,action_external_app
+net.shinyfrog.bear-IOS.contents,Get Contents on Shinyfrog,action_external_app
+ke.bou.GizmoPack.UniversalVariablesIntent,Universal Variables in GizmoPack,action_external_app
+com.alexhay.ToolboxProForShortcuts.ScanDocumentIntent,Scan Document in Toolbox Pro,action_external_app
+io.pushcut.Pushcut.ShowNotificationIntent,Show Notification in Pushcut,action_external_app
+com.culturedcode.ThingsiPad.TAIItemEntity,Open Things 3 Item,action_external_app
+com.culturedcode.ThingsiPad.TAIEditItems,Edit Things 3 Items,action_external_app
+com.culturedcode.ThingsiPad.TAIAddTodo2,Add ToDo on Things 3,action_external_app
+com.sindresorhus.Actions.RandomTextIntent,Random Text through Sindresorhus,action_external_app
+com.alexhay.ToolboxProForShortcuts.CreateTextImageIntent,Create Text Image in Toolbox Pro,action_external_app
+com.sindresorhus.Actions.FormatDurationIntent,Format Duration through Sindresorhus,action_external_app
+com.apple.shortcuts.CreateShortcutiCloudLinkAction,Create iCloud Link,action_create_icloudlink
+com.brogrammers.charty.NewChartIntent,New Chart in Charty,action_external_app
+com.brogrammers.charty.AddSeriesToChartIntent,Add Series to Chart in Charty,action_external_app
+com.brogrammers.charty.CopyChartToClipboardIntent,Copy Chart to Clipboard in Charty,action_external_app
+org.fastdevsproject.altervista.Device-Monitor.RAMCleanIntent,RAM Clean in Device Monitor,action_external_app
+com.alexhay.ToolboxProForShortcuts.EditFolderBookmarksIntent,Edit Folder Bookmarks in Toolbox Pro,action_external_app
+com.alexhay.ToolboxProForShortcuts.ListContentsOfBookmarkedFolderIntent,List Contents of Bookmarked Folder in Toolbox Pro,action_external_app
+com.alexhay.ToolboxProForShortcuts.EditBookmarkedFileIntent,Edit Bookmarked File in Toolbox Pro,action_external_app
+com.sindresorhus.Actions.GenerateCSVIntent,Generate CSV through Sindresorhus,action_external_app
+com.alexhay.ToolboxProForShortcuts.SaveFilesToBookmarkedFoldersIntent,Save Files to Bookmarked Folders in Toolbox Pro,action_external_app
+com.sindresorhus.Actions.RemoveEmptyLinesIntent,Remove Empty Lines through Sindresorhus,action_external_app
+app.shortcutify.Shortcutify.SpotifyPlayPauseIntent,Play/Pause Spotify in Shortcutify,action_external_app
+com.sindresorhus.Actions.GlobalVariableGetText,Global Variable Get Text through Sindresorhus,action_external_app
+com.sindresorhus.Actions.GlobalVariableSetText,Global Variable Set Text through Sindresorhus,action_external_app
+com.sindresorhus.Actions.RemoveFromListIntent,Remove from List through Sindresorhus,action_external_app
+com.sindresorhus.Actions.ScanQRCodesInImageIntent,Scan QR Codes in Image through Sindresorhus,action_external_app
+com.agiletortoise.Drafts5.QueryDraftsIntent,Query Drafts in Drafts 5,action_external_app
+com.agiletortoise.Drafts5.GetDraftIntent,Get Draft in Drafts 5,action_external_app
+com.agiletortoise.Drafts5.RunActionIntent,Run Action in Drafts 5,action_external_app
+com.omz-software.Pythonista3.PA3RunScriptIntent,Run Script in Pythonista 3,action_external_app
+com.atow.LaunchCuts.GetFoldersIntent,Get Folders in LaunchCuts,action_external_app
+com.atow.LaunchCuts.GetFolderIntent,Get Folder in LaunchCuts,action_external_app
+com.culturedcode.ThingsiPhone.TAIAddTodo2,Add ToDo on Things 3,action_external_app
+is.workflow.actions.silenceunknowncallers.set,Set Silence Unknown Callers,action_slientcaller
+com.TickTick.task.TTAddTaskToCalendarIntent,Add Task to Calendar in TickTick,action_external_app
+com.agiletortoise.Drafts5.CaptureIntent,Capture in Drafts 5,action_external_app
+com.agiletortoise.Drafts-OSX.CaptureIntent,Capture in Drafts Mac,action_external_app
+com.google.OPA.OPAAskGoogleIntent,Ask Google in OPA,action_external_app
+com.grailr.CARROTweather.CurrentForecastIntent,Current Forecast in CARROT Weather,action_external_app
+com.alexhay.ToolboxProForShortcuts.BookmarkFolderIntent,Bookmark Folder in Toolbox Pro,action_external_app
+com.alexhay.ToolboxProForShortcuts.RemoveItemsFromListIntent,Remove Items from List in Toolbox Pro,action_external_app
+com.sindresorhus.Actions.SetFileCreationModificationDateIntent,Set File Creation Modification Date through Sindresorhus,action_external_app
+com.alexhay.ToolboxProForShortcuts.GetCalendarsIntent,Get Calendars in Toolbox Pro,action_external_app
+com.alexhay.ToolboxProForShortcuts.CreateCalendarIntent,Create Calendar in Toolbox Pro,action_external_app
+com.alexhay.ToolboxProForShortcuts.GetAudioIntent,Get Audio in Toolbox Pro,action_external_app
+com.alexhay.ToolboxProForShortcuts.GetEventIDIntent,Get Event ID in Toolbox Pro,action_external_app
+com.alexhay.ToolboxProForShortcuts.EditEventIntent,Edit Event in Toolbox Pro,action_external_app
+com.sindresorhus.Actions.RandomDateTimeIntent,Random Date Time through Sindresorhus,action_external_app
+com.flexibits.fantastical2.iphone.FKRCreateFromInputIntent,Create Event in Fantastical 2,action_external_app
+com.culturedcode.ThingsiPad.TAIDeleteItems,Delete Things 3 Items,action_external_app
+com.alexhay.Console.LogMessageIntent,Log Message in Console,action_external_app
+com.iconfactory.TotMobile.QueryDotIntent,Query Dot in Tot,action_external_app
+com.iconfactory.TotMobile.SetDotIntent,Set Dot in Tot,action_external_app
+com.sindresorhus.Actions.AskForText,Ask for Text through Sindresorhus,action_external_app
+org.joinmastodon.app.SendPostIntent,Send Post in Mastodon,action_external_app
+is.workflow.actions.dropbox.appendfile,Append File in Dropbox,action_external_app
+com.google.chrome.ios.SearchInChromeIntent,Search in Chrome,action_external_app
+com.zlineman.Jellyfish.ImportShortcutIntent,Import Shortcut in Jellyfish,action_external_app
+com.apple.mobilesafari.CreateNewPrivateTab,Create New Private Tab in Safari,action_create_private_tab
+com.feelthemusi.musi.MPlayMyFavoritesIntent,Play My Favorites in Musi,action_external_app
+com.feelthemusi.musi.MSearchIntent,Search in Musi,action_external_app
+com.apple.ShortcutsActions.CellularPlanEntity,Filter Cellular Plan,action_filter_cellular
+com.apple.ShortcutsActions.SetDefaultCellularPlanAction,Set Default Cellular Plan,action_set_default_cellular
+com.brogrammers.charty.GetInfoAllChartsIntent,Get Info All Charts in Charty,action_external_app
+com.brogrammers.charty.DeleteChartIntent,Delete Chart in Charty,action_external_app
+com.brogrammers.charty.NewChartWithSeriesIntent,New Chart with Series in Charty,action_external_app
+com.brogrammers.charty.StyleAxisIntent,Style Axis in Charty,action_external_app
+com.brogrammers.charty.AddMovingAverageIntent,Add Moving Average in Charty,action_external_app
+com.sindresorhus.Actions.TrimWhitespaceIntent,Trim Whitespace through Sindresorhus,action_external_app
+com.sindresorhus.Actions.ParseCSVIntent,Parse CSV through Sindresorhus,action_external_app
+com.sindresorhus.Actions.ReverseListIntent,Reverse List through Sindresorhus,action_external_app
+com.brogrammers.charty.StyleLineSeriesIntent,Style Line Series in Charty,action_external_app
+com.apple.mobileslideshow.OpenCollectionIntent,Open Collection,action_external_app
+com.alexhay.ToolboxProForShortcuts.GenerateUUIDIntent,Generate UUID in Toolbox Pro,action_external_app
+com.omz-software.Pythonista.runscript,Run Script in Pythonista,action_external_app
+com.alexhay.ToolboxProForShortcuts.ConvertCurrencyIntent,Convert Currency in Toolbox Pro,action_external_app
+com.brogrammers.charty.StyleChartIntent,Style Chart in Charty,action_external_app
+com.brogrammers.charty.StyleScatterSeriesIntent,Style Scatter Series in Charty,action_external_app
+com.brogrammers.charty.GroupDataIntent,Group Data in Charty,action_external_app
+com.brogrammers.charty.ExportChartAsImageIntent,Export Chart as Image in Charty,action_external_app
+com.brogrammers.charty.UpdateWidgetsIntent,Update Widgets in Charty,action_external_app
+com.dayonelog.dayoneiphone.post,Post in Day One,action_external_app
+com.tantsissa.AutoSleep.ReadinessIntent,Readiness in AutoSleep,action_external_app
+com.xvision.datamannext.ShowUsageIntent,Show Usage in DataMan Next,action_external_app
+com.fifteenjugglers.solarwatch.ComputeSolarEventTimeIntent,Compute Solar Event Time in SolarWatch,action_external_app
+ch.marcela.ada.LibTerm.RunCommandIntent,Run Command in LibTerm,action_external_app
+com.sindresorhus.Actions.GlobalVariableDelete,Global Variable Delete through Sindresorhus,action_external_app
+com.sindresorhus.Actions.TranscribeAudioIntent,Transcribe Audio through Sindresorhus,action_external_app
+com.apple.shortcuts.TranscribeAudioAction,Transcribe Audio To Text,action_transcribe_audio
+com.alexhay.ToolboxProForShortcuts.RecogniseSpeechIntent,Recognise Speech in Toolbox Pro,action_external_app
+com.apple.Numbers.TNiOSOpenAnyDocumentIntent,Open Any Document,action_external_app
+com.iconfactory.Tot.QueryDotIntent,Query Dot in Tot,action_external_app
+com.iconfactory.Tot.AddToDotIntent,Add to Dot in Tot,action_external_app
+com.iconfactory.TotMobile.GetDotIntent,Get Dot in Tot,action_external_app
+com.agiletortoise.Drafts5.OpenDraftIntent,Open Draft in Drafts 5,action_external_app
+com.iconfactory.Tot.ShowDotIntent,Show Dot in Tot,action_external_app
+com.alexhay.ToolboxProForShortcuts.GetPhotoAlbumsIntent,Get Photo Albums in Toolbox Pro,action_external_app
+com.alexhay.ToolboxProForShortcuts.AddPhotoAlbumIntent,Add Photo Album in Toolbox Pro,action_external_app
+AsheKube.app.a-Shell.PutFileIntent,Put File in a-Shell,action_external_app
+AsheKube.app.a-Shell.GetFileIntent,Get File in a-Shell,action_external_app
+com.google.GoogleMobile.SearchImageWithLensIntent,Search Image with Lens,action_external_app
+com.alexhay.ToolboxProForShortcuts.CalculateWithSoulverIntent,Calculate with Soulver in Toolbox Pro,action_external_app
+com.agiletortoise.Drafts5.QueryWorkspaceIntent,Query Workspace in Drafts 5,action_external_app
+co.supertop.Castro-2.GetNowPlayingEpisodeDetailsIntent,Get Now Playing Episode Details in Castro 2,action_external_app
+com.alexhay.ToolboxProForShortcuts.GetFilesFromBookmarkedFolderIntent,Get Files from Bookmarked Folder in Toolbox Pro,action_external_app
+com.alexhay.ToolboxProForShortcuts.DeleteFilesInBookmarkedFolderIntent,Delete Files in Bookmarked Folder in Toolbox Pro,action_external_app
+dk.simonbs.Jayson.ViewJSONIntent,View JSON in Jayson,action_external_app
+dk.simonbs.Jayson.GetFileIntent,Get File in Jayson,action_external_app
+com.apple.Notes.CreateFolderLinkAction,Create Folder Link in Notes,action_external_app
+com.alexhay.ToolboxProForShortcuts.DeleteFromDictionaryIntent,Delete from Dictionary in Toolbox Pro,action_external_app
+com.brogrammers.charty.AddAverageIntent,Add Average in Charty,action_external_app
+com.brogrammers.charty.StyleBarSeriesIntent,Style Bar Series in Charty,action_external_app
+com.apple.mobilesafari.ReadingListItemEntity,Filter the Safari Reading List,action_filter_readinglist_item
+dk.simonbs.Scriptable.RefreshAllWidgetsIntent,Refresh All Widgets in Scriptable,action_external_app
+is.workflow.actions.cloudapp.upload,Upload to CloudApp,action_external_app
+com.alexhay.ToolboxProForShortcuts.TagFilesIntent,Tag Files in Toolbox Pro,action_external_app
+com.alexhay.ToolboxProForShortcuts.GenerateThumbnailsIntent,Generate Thumbnails in Toolbox Pro,action_external_app
+com.alexhay.ToolboxProForShortcuts.GetFileURLIntent,Get File URL in Toolbox Pro,action_external_app
+com.culturedcode.ThingsMac.TAIItemEntity,Open Things 3 Item in Things Mac,action_external_app
+com.culturedcode.ThingsMac.TAIAddTodo2,Add ToDo on Things 3 in Things Mac,action_external_app
+com.sindresorhus.Actions.GetFileIconIntent,Get File Icon through Sindresorhus,action_external_app
+com.alexhay.ToolboxProForShortcuts.SearchForEmojiIntent,Search for Emoji in Toolbox Pro,action_external_app
+com.appliedphasor.working-copy.WriteFileIntent,Write File in Working Copy,action_external_app
+com.appliedphasor.working-copy.CommitRepositoryIntent,Commit Repository in Working Copy,action_external_app
+com.appliedphasor.working-copy.PushRepositoryIntent,Push Repository in Working Copy,action_external_app
+com.sindresorhus.Actions.GetTitleOfURLIntent,Get Title of URL through Sindresorhus,action_external_app
+com.Christopher-Hannah.Text-Case.ReplaceIntent,Replace in Text Case,action_external_app
+com.minimasoftware.TimerPlus.StartQuickTimerIntent,Start Quick Timer in Timer Plus,action_external_app
+com.apple.NanoSettings.NPRFSetWakeOnWristRaiseIntent,Set Wake on Wrist Raise on Watch,action_external_app
+com.apple.NanoSettings.NPRFSetAutoLaunchAudioAppsIntent,Set Auto Launch Audio Apps on Watch,action_external_app
+com.apple.PBBridgeSupport.BridgeIntents.COSListGizmoFacesIntent,List Gizmo Faces on Watch,action_external_app
+com.apple.PBBridgeSupport.BridgeIntents.COSGetCurrentGizmoFaceIntent,Get Current Gizmo Face on Watch,action_external_app
+com.apple.AccessibilityUtilities.AXSettingsShortcuts.AXStartRemoteWatchScreenIntent,Start Remote Watch Screen,action_external_app
+net.shinyfrog.bear-IOS.grab,Grab Item on Shinyfrog,action_external_app
+com.ngocluu.goodlinks.GetCurrentLink,Get Current Link in GoodLinks,action_external_app
+com.ngocluu.goodlinks.AddLinkIntent,Add Link in GoodLinks,action_external_app
+com.ngocluu.goodlinks.GetCurrentSelection,Get Current Selection in GoodLinks,action_external_app
+com.ngocluu.goodlinks.LinkEntity,Filter Link in GoodLinks,action_external_app
+com.ngocluu.goodlinks.OpenLinkIntent,Open Link in GoodLinks,action_external_app
+me.damir.dropover-mac.AddToShelfIntent,Add to Shelf in Dropover Mac,action_external_app
+app.cyan.taio.SaveClippingIntent,Save Clipping in Taio,action_external_app
+is.workflow.actions.properties.note,Get Details of Note,action_properties_images
+is.workflow.actions.properties.shazam,Get Details of Shazam,action_properties_images
+dk.simonbs.Jayson.PrettifyJSONIntent,Prettify JSON in Jayson,action_external_app
+com.elgato.eve.EVEMyCamerasIntent,Open Elgato Cameras,action_external_app
+com.anthopak.SmartLightsController.GetCurrentRoomsIntent,Get Current Rooms in Smart Lights Controller,action_external_app
+br.com.marcosatanaka.play.GetVideoIntent,Get Video in Play,action_external_app
+com.Christopher-Hannah.Text-Case.TextCaseIntent,Convert Text Case,action_external_app
+com.sindresorhus.Actions.ParseJSON5Intent,Parse JSON5 through Sindresorhus,action_external_app
+com.sindresorhus.Actions.SymbolImageIntent,Symbol Image through Sindresorhus,action_external_app
+is.workflow.actions.properties.itunesartist,Get Details of iTunes Artist,action_properties_images
+com.alexhay.ToolboxProForShortcuts.QuickMenuIntent,Quick Menu in Toolbox Pro,action_external_app
+com.alexhay.ToolboxProForShortcuts.GetMenuItemIntent,Get Menu Item in Toolbox Pro,action_external_app
+com.alexhay.ToolboxProForShortcuts.GetTextFromImageIntent,Get Text from Image in Toolbox Pro,action_external_app
+net.shinyfrog.bear-iOS.SFSearchNotesIntent,Search Notes on Shinyfrog,action_external_app
+net.shinyfrog.bear-iOS.SFAddToNoteIntent,Add to Note on Shinyfrog,action_external_app
+net.shinyfrog.bear-iOS.SFCreateNoteIntent,Create Note on Shinyfrog,action_external_app
+com.alexhay.ToolboxProForShortcuts.GetMovieDetailsIntent,Get Movie Details in Toolbox Pro,action_external_app
+com.alexhay.ToolboxProForShortcuts.DetectFacesIntent,Detect Faces in Toolbox Pro,action_external_app
+com.alexhay.ToolboxProForShortcuts.RecogniseObjectsInImageIntent,Recognise Objects in Image in Toolbox Pro,action_external_app
+com.alexhay.ToolboxProForShortcuts.RemoveEmojiIntent,Remove Emoji in Toolbox Pro,action_external_app
+com.obdura.playlistimport.MakePlaylistFromURLIntent,Make Playlist from URL in Playlist Import,action_external_app
+com.obdura.playlistimport.AllImportsFinishedIntent,All Imports Finished in Playlist Import,action_external_app
+com.apple.Notes.DeleteNotesLinkAction,Delete Notes Link,action_external_app
+com.agiletortoise.Drafts-OSX.OpenDraftIntent,Open Draft in Drafts,action_external_app
+com.alexhay.ToolboxProForShortcuts.CreateRemindersListIntent,Create Reminders List in Toolbox Pro,action_external_app
+com.alexhay.ToolboxProForShortcuts.CreateReminderIntent,Create Reminder in Toolbox Pro,action_external_app
+dk.simonbs.Scriptable.ParameterizedRunScriptIntent,Parameterized Run Script in Scriptable,action_external_app
+com.pvieito.HomeBot.HomeBotGetHomeItemsIntent,Get Home Items in HomeBot,action_external_app
+com.pvieito.HomeBot.HomeBotRunHomeActionIntent,Run Home Action in HomeBot,action_external_app
+com.starbucks.mystarbucks.SBAOrderItemIntent,Order Item in My Starbucks,action_external_app
+com.alexhay.ToolboxPro2.GenerateTextIntent,Generate Text in Toolbox Pro 2,action_external_app
+com.overdesigned.Cheatsheet.CSAddCheatIntent,Add Cheat in Cheatsheet,action_external_app
+com.zlineman.Jellyfish.ImportObjectsIntent,Import Objects in Jellyfish,action_external_app
+com.zlineman.Jellyfish.GrabJellycutIntent,Grab Jellycut in Jellyfish,action_external_app
+com.7Z88K9GUU8.com.rileytestut.AltStore.RefreshAllIntent,Refresh All in AltStore,action_external_app
+com.openplanetsoftware.Just-Press-Record-for-iOS.StartRecordingIntent,Start Recording in Just Press Record,action_external_app
+com.bloombuilt.dayone-ios.ShowEntriesIntent,Show Entries in Day One,action_external_app
+ke.bou.WidgetPack.TextIntent,Text in WidgetPack,action_external_app
+ke.bou.WidgetPack.ImageIntent,Image in WidgetPack,action_external_app
+ke.bou.WidgetPack.StackIntent,Stack in WidgetPack,action_external_app
+com.LennartBusch.Milage.TimeStampsIntent,Time Stamps in Milage,action_external_app
+com.LennartBusch.Milage.TripLastDistanceIntent,Trip Last Distance in Milage,action_external_app
+com.sindresorhus.One-Thing.SetTextIntent,Set Text through Sindresorhus,action_external_app
+is.workflow.actions.lightroom.import,Import in Lightroom,action_external_app
+com.agiletortoise.Drafts-OSX.QueryDraftsIntent,Query Drafts in Drafts,action_external_app
+com.alexhay.ToolboxProForShortcuts.FilterListIntent,Filter List in Toolbox Pro,action_external_app
+com.alexhay.ToolboxProForShortcuts.RemoveDuplicatesIntent,Remove Duplicates in Toolbox Pro,action_external_app
+com.sindresorhus.Aiko.TranscribeAudioIntent,Transcribe Audio in Aiko,action_external_app
+com.culturedcode.ThingsiPhone.TAIItemEntity,Open Things 3 Item in Things iPhone,action_external_app
+com.culturedcode.ThingsiPhone.TAIShowItems2,Show Things 3 Items in Things iPhone,action_external_app
+com.alexhay.ToolboxProForShortcuts.SwitchCaseIntent,Switch Case in Toolbox Pro,action_external_app
+com.sindresorhus.Lock-Screen-One.SetTextIntent,Set Text in Lock Screen One,action_external_app
+com.rafaelsoh.dime.NewTransactionIntent,New Transaction in Dime,action_external_app
+com.alexhay.Console.StartLoggingIntent,Start Logging in Console,action_external_app
+com.alexhay.Console.OutputMessagesIntent,Output Messages in Console,action_external_app
+com.alexhay.Console.ClearMessagesIntent,Clear Messages in Console,action_external_app
+com.alexhay.Console.LogItemsIntent,Log Items in Console,action_external_app
+in.muditbhargava.LookUp.FindCollectedWordsIntent,Find Collected Words in LookUp,action_external_app
+com.apple.mobilesafari.BookmarkEntity,Filter Bookmark in Safari,action_bookmark_safari
+ke.bou.GizmoPack.SnapshotMapIntent,Snapshot Map in GizmoPack,action_external_app
+com.iconfactory.TotMobile.AddToDotIntent,Add to Dot in Tot Mobile,action_external_app
+dk.simonbs.Retoot.CreateQuoteIntent,Create Quote in Retoot,action_external_app
+com.sindresorhus.Actions.RandomColorIntent,Random Color through Sindresorhus,action_external_app
+com.sindresorhus.Actions.OverwriteFile,Overwrite File through Sindresorhus,action_external_app
+net.shinyfrog.bear-IOS.search,Search on Shinyfrog,action_external_app
+com.culturedcode.ThingsiPhone.TAIEditItems,Edit Things 3 Items in Things iPhone,action_external_app
+com.alexhay.ToolboxProForShortcuts.SmartMenuIntent,Smart Menu in Toolbox Pro,action_external_app
+ke.bou.WidgetPack.ModifierRelativeFrameIntent,Modifier Relative Frame in WidgetPack,action_external_app
+com.alexhay.MenuBox.ChooseMenuSetIntent,Choose Menu Set in MenuBox,action_external_app
+com.apple.mobilesafari.CreateNewTab,Create New Tab in Safari,action_create_newtab
+com.apple.mobilesafari.CreateNewTabGroup,Create New Tab Group in Safari,action_create_new_tab_group
+com.apple.mobilesafari.TabGroupEntity,Filter Tab Group in Safari,action_filter_tabgroup
+com.apple.mobilesafari.OpenTabGroup,Open Tab Group in Safari,action_open_tabgroup
+com.apple.mobilesafari.OpenTab,Open Tab in Safari,action_opentab_safari
+com.apple.mobilesafari.OpenBookmark,Open Bookmark in Safari,action_open_bookmark
+in.muditbhargava.LookUp.ClipboardSearchIntent,Clipboard Search in LookUp,action_external_app
+com.sindresorhus.Actions.Boolean,Boolean through Sindresorhus,action_external_app
+com.sindresorhus.Actions.IsAccessibilityFeatureOn,Get if Accessibility Feature is On through Sindresorhus,action_external_app
+com.microsoft.bing.OpenRewardsIntent,Open Rewards in Bing,action_external_app
+com.alexhay.ToolboxProForShortcuts.FindMoviesIntent,Find Movies in Toolbox Pro,action_external_app
+com.alexhay.ToolboxProForShortcuts.FindMovies2Intent,Find Movies 2 in Toolbox Pro,action_external_app
+com.alexhay.ToolboxProForShortcuts.GetMovieDetails2Intent,Get Movie Details 2 in Toolbox Pro,action_external_app
+com.sindresorhus.Actions.CalculateWithSoulver,Calculate with Soulver through Sindresorhus,action_external_app
+com.sindresorhus.Actions.MusicPlaylist_AppEntity,Filter Music Playlist through Sindresorhus,action_external_app
+br.com.marcosatanaka.musicbox.GetMusicIntent,Get Music in Music Box,action_external_app
+br.com.marcosatanaka.music-harbor.ArtistAppEntity,Filter Artist in Music Harbor,action_external_app
+com.skype.skype.call,Call in Skype,action_external_app
+com.appliedphasor.working-copy.CloneRepositoryIntent,Clone Repository in Working Copy,action_external_app
+com.sindresorhus.Actions.Authenticate2,Authenticate 2 through Sindresorhus,action_external_app
+com.alexhay.ToolboxProForShortcuts.GetLocationFromCoordsIntent,Get Location from Coords in Toolbox Pro,action_external_app
+co.bergen.Darkroom.HSLExportWithDarkroomIntent,HSL Export with Darkroom,action_external_app
+com.omnigroup.OmniFocus3.iOS.AddTaskPaperIntent,Add Task Paper in OmniFocus 3,action_external_app
+ke.bou.WidgetPack.SetPropertyIntent,Set Property in WidgetPack,action_external_app
+ke.bou.WidgetPack.GradientIntent,Gradient in WidgetPack,action_external_app
+com.alexhay.ToolboxProForShortcuts.ScanNFCIntent,Scan NFC in Toolbox Pro,action_external_app
+com.alexhay.ToolboxProForShortcuts.GetTextFromImagesIAIHIntent,Get Text from Images in Toolbox Pro,action_external_app
+nl.jeffreykuiken.NoirApp.SetEnabledForSiteIntent,Set Enabled for Site in Noir,action_external_app
+nl.jeffreykuiken.NoirApp.SetImageDimmingForSiteIntent,Set Image Dimming for Site in Noir,action_external_app
+com.alexhay.nautomate.ChooseIntegrationIntent,Choose Integration in Nautomate,action_external_app
+com.alexhay.nautomate.FindPagesIntent,Find Pages in Nautomate,action_external_app
+com.alexhay.nautomate.GetTextFromPageIntent,Get Text from Page in Nautomate,action_external_app
+ke.bou.WidgetPack.ModifierScaledToFillIntent,Modifier Scaled to Fill in WidgetPack,action_external_app
+com.omnigroup.OmniFocus4.AddTaskIntent,Add Task in OmniFocus 4,action_external_app
+com.apple.iBooks.SearchBooksIntent,Search Books in iBooks,action_external_app
+com.omnigroup.OmniFocus4.FindProjectsIntent,Find Projects in OmniFocus 4,action_external_app
+com.omnigroup.OmniFocus4.ShowFromChoiceIntent,Show From Choice in OmniFocus 4,action_external_app
+com.omnigroup.OmniFocus4.AddTaskPaperIntent,Add Task Paper in OmniFocus 4,action_external_app
+com.omnigroup.OmniFocus3.iOS.FindProjectsIntent,Find Projects in OmniFocus 3,action_external_app
+com.omnigroup.OmniFocus3.iOS.ShowFromChoiceIntent,Show From Choice in OmniFocus 3,action_external_app
+com.apple.Numbers.TSADocumentOpenIntent,Open Document in Numbers,action_external_app
+fm.overcast.overcast.OCCurrentEpisodeInfoIntent,Current Episode Info in Overcast,action_external_app
+com.culturedcode.ThingsiPad.TINAddTodoIntent,Add ToDo in Things 3,action_external_app
+com.wiheads.paste.GetItemAtIndexIntent,Get Item at Index in Paste,action_external_app
+com.alexhay.ToolboxProForShortcuts.ResizeImageExtendedIntent,Resize Image Extended in Toolbox Pro,action_external_app
+com.alexhay.ToolboxProForShortcuts.FilterImageIntent,Filter Image in Toolbox Pro,action_external_app
+is.workflow.actions.wordpress.post,Post in WordPress,action_external_app
+is.workflow.actions.trello.add.list,Add List in Trello,action_external_app
+is.workflow.actions.trello.add.board,Add Board in Trello,action_external_app
+com.sindresorhus.Actions.FormatDateDifferenceIntent,Format Date Difference through Sindresorhus,action_external_app
+com.agiletortoise.Drafts5.SetDraftIntent,Set Draft in Drafts 5,action_external_app
+fm.overcast.overcast.OCPlayIntent,Play in Overcast,action_external_app
+com.omnigroup.OmniFocus3.iOS.FindTasksIntent,Find Tasks in OmniFocus 3,action_external_app
+is.workflow.actions.tumblr.post,Post in Tumblr,action_external_app
+com.alexhay.ToolboxProForShortcuts.GetTBPToolsIntent,Get TBP Tools in Toolbox Pro,action_external_app
+com.appliedphasor.working-copy.PullRepositoryIntent,Pull Repository in Working Copy,action_external_app
+com.sindresorhus.Actions.GetFilePathIntent,Get File Path through Sindresorhus,action_external_app
+ch.marcela.ada.Pyto.RunCodeIntent,Run Code in Pyto,action_external_app
+ke.bou.WidgetPack.ModifierForegroundColorIntent,Modifier Foreground Color in WidgetPack,action_external_app
+com.getcardpointers.app.ShortcutsOfferEntity,Filter Shortcuts Offer in CardPointers,action_external_app
+com.alexhay.ToolboxProForShortcuts.PrettyPrintIntent,Pretty Print in Toolbox Pro,action_external_app
+net.shinyfrog.bear.SFCreateNoteIntent,Create Note in Bear,action_external_app
+net.shinyfrog.bear-iOS.SFAddTagsToNoteIntent,Add Tags to Note on Shinyfrog,action_external_app
+com.sindresorhus.Actions.GetUserDetailsIntent,Get User Details through Sindresorhus,action_external_app
+com.meal.plan.ios.GetRecipeFromURLIntent,Get Recipe from URL in Meal Plan,action_external_app
+com.orange.telephone.IdentifyPhoneNumber,Identify Phone Number in Orange,action_external_app
+com.culturedcode.ThingsiPhone.TINAddTodoIntent,Add ToDo in Things iPhone,action_external_app
+com.sindresorhus.Actions.GetRunningAppsIntent,Get Running Apps through Sindresorhus,action_external_app
+com.sindresorhus.Actions.SortListIntent,Sort List through Sindresorhus,action_external_app
+com.agiletortoise.Drafts4.addto,Add to Drafts 4,action_external_app
+com.alexhay.ToolboxProForShortcuts.FindArtistsIntent,Find Artists in Toolbox Pro,action_external_app
+com.alexhay.ToolboxProForShortcuts.FindAlbumsIntent,Find Albums in Toolbox Pro,action_external_app
+com.apple.iBooks.BookReaderNavigatePagesIntent,Navigate Pages in iBooks,action_external_app
+com.alexhay.ToolboxProForShortcuts.FindTvShowsIntent,Find TV Shows in Toolbox Pro,action_external_app
+com.alexhay.ToolboxProForShortcuts.GetTvShowDetailsIntent,Get TV Show Details in Toolbox Pro,action_external_app
+com.alexhay.ToolboxProForShortcuts.BookmarkFileIntent,Bookmark File in Toolbox Pro,action_external_app
+com.alexhay.ToolboxProForShortcuts.EditPendingNotificationsIntent,Edit Pending Notifications in Toolbox Pro,action_external_app
+com.microsoft.to-do.WLAddTaskIntent,Add Task in Microsoft To Do,action_external_app
+ke.bou.WidgetPack.SFSymbolIntent,SF Symbol in WidgetPack,action_external_app
+com.alexhay.ToolboxProForShortcuts.QuickMatchTextIntent,Quick Match Text in Toolbox Pro,action_external_app
+com.sindresorhus.Actions.IsDeviceOrientationIntent,Get Device Orientation through Sindresorhus,action_external_app
+com.apple.mobilesafari.OpenView,Open View in Safari,action_open_safariview
+com.alexhay.ToolboxProForShortcuts.DetectFacesIAIHIntent,Detect Faces in Toolbox Pro,action_external_app
+com.omz-software.Pythonista.editscript,Edit Script in Pythonista,action_external_app
+com.alexhay.ToolboxProForShortcuts.FindPexelPhotosIntent,Find Pexel Photos in Toolbox Pro,action_external_app
+com.reederapp.5.macOS.GetReadLaterIntent,Get Read Later in Reeder 5,action_external_app
+com.reederapp.5.macOS.OpenReadLaterIntent,Open Read Later in Reeder 5,action_external_app
+ke.bou.GizmoPack.CreateWalletPassIntent,Create Wallet Pass in GizmoPack,action_external_app
+com.alexhay.ToolboxProForShortcuts.GetW3WIntent,Get W3W in Toolbox Pro,action_external_app
+art.splashy.GetSplashyWallpaperIntent,Get Splashy Wallpaper in Splashy,action_external_app
+com.sindresorhus.Actions.GetDominantColorsOfImage,Get Dominant Colors of Image through Sindresorhus,action_external_app
+com.sindresorhus.Actions.GenerateUUIDIntent,Generate UUID through Sindresorhus,action_external_app
+com.SideStore.SideStore.ZFY6868JV7.RefreshAllIntent,Refresh All in SideStore,action_external_app
+com.SideStore.SideStore.G44P446W92.RefreshAllIntent,Refresh All in SideStore,action_external_app
+com.P4N4J84A3M.com.rileytestut.AltStore.ViewAppIntent,View App in AltStore,action_external_app
+com.P4N4J84A3M.com.rileytestut.AltStore.RefreshAllIntent,Refresh All in AltStore,action_external_app
+co.zottmann.ActionsForObsidian.CheckForNotes,Check for Notes in Actions for Obsidian,action_external_app
+co.zottmann.ActionsForObsidian.CheckForNote,Check for Note in Actions for Obsidian,action_external_app
+co.zottmann.ActionsForObsidian.AppendNote,Append Note in Actions for Obsidian,action_external_app
+co.zottmann.ActionsForObsidian.CreateNote,Create Note in Actions for Obsidian,action_external_app
+com.tantsissa.AutoSleep.SleepRingsIntent,Sleep Rings in AutoSleep,action_external_app
+com.lexwarelabs.goodmorning.SleepIntent,Sleep in Good Morning,action_external_app
+in.muditbhargava.LookUp.AddToCollectionIntent,Add to Collection in LookUp,action_external_app
+com.jonny.spring.KJYGetTweetIntent,Get Tweet in KJY,action_external_app
+ke.bou.WidgetPack.ModifierMinimumScaleFactorIntent,Modifier Minimum Scale Factor in WidgetPack,action_external_app
+fm.overcast.overcast.add,Add in Overcast,action_external_app
+com.alexhay.ToolboxProForShortcuts.GetSymbolNameIntent,Get Symbol Name in Toolbox Pro,action_external_app
+org.fastdevsproject.altervista.Device-Monitor.CPUChartIntent,CPU Chart in Device Monitor,action_external_app
+org.fastdevsproject.altervista.Device-Monitor.RAMChartIntent,RAM Chart in Device Monitor,action_external_app
+org.fastdevsproject.altervista.Device-Monitor.RAMDepthCleanIntent,RAM Depth Clean in Device Monitor,action_external_app
+com.openai.chat.OpenVoiceModeIntent,Open Voice Mode in ChatGPT,action_external_app
+com.apple.iBooks.BookReaderChangeThemeIntent,Change Theme in iBooks,action_external_app
+com.apple.iBooks.BookReaderChangePageNavigationIntent,Change Page Navigation in iBooks,action_external_app
+is.workflow.actions.evernote.getlink,Get Link in Evernote,action_external_app
+com.pcalc.mobile.CalcSetRegisterWithValueIntent,Set Register with Value in PCalc,action_external_app
+com.pcalc.mobile.CalcRunFunctionWithOneParameterIntent,Run Function with One Parameter in PCalc,action_external_app
+com.pcalc.mobile.CalcRunFunctionWithTwoParametersIntent,Run Function with Two Parameters in PCalc,action_external_app
+com.culturedcode.ThingsMac.TINRunThingsURLIntent,Run Things URL in Things Mac,action_external_app
+com.apple.AccessibilityUIServer.ToggleMusicHapticsIntent,Toggle Music Haptics,action_external_app
+com.iconfactory.Tot.GetDotIntent,Get Dot in Tot,action_external_app
+ke.bou.WidgetPack.ModifierShadowIntent,Modifier Shadow in WidgetPack,action_external_app
+com.alexhay.ToolboxProForShortcuts.GetLocationFromTextIntent,Get Location from Text in Toolbox Pro,action_external_app
+com.shi.AviaryApp.PostTweetIntent,Post Tweet in Aviary,action_external_app
+com.twidere.TwidereX.PublishPostIntent,Publish Post in Twidere X,action_external_app
+com.ulyssesapp.ios.ULListSheetsIntent,List Sheets in Ulysses,action_external_app
+com.ulyssesapp.ios.ULGetIdentifierIntent,Get Identifier in Ulysses,action_external_app
+com.ulyssesapp.ios.ULGetSheetIntent,Get Sheet in Ulysses,action_external_app
+net.shinyfrog.bear-iOS.SFAddFilesToNoteIntent,Add Files to Note on Shinyfrog,action_external_app
+com.waterminder.waterminder.LogCupIntent,Log Cup in WaterMinder,action_external_app
+com.waterminder.waterminder.LogDrinkIntent,Log Drink in WaterMinder,action_external_app
+com.waterminder.waterminder.ShowLastDrinkIntent,Show Last Drink in WaterMinder,action_external_app
+com.waterminder.waterminder.ShowProgressIntent,Show Progress in WaterMinder,action_external_app
+com.waterminder.waterminder.ShowRemainingWaterGoalIntent,Show Remaining Water Goal in WaterMinder,action_external_app
+com.wiheads.paste.ios.GetLatestItemIntent,Get Latest Item in Paste,action_external_app
+com.highcaffeinecontent.radio.MRDPlayStationIntent,Play Station in Marvis Pro,action_external_app
+com.tantsissa.AutoSleep.WristTempIntent,Wrist Temp in AutoSleep,action_external_app
+com.omz-software.Pythonista3.PA3AddFileIntent,Add File in Pythonista 3,action_external_app
+com.microsoft.to-do.WLShowListIntent,Show List in Microsoft To Do,action_external_app
+com.XC759DNLDS.com.rileytestut.AltStore.RefreshAllIntent,Refresh All in AltStore,action_external_app
+ai.perplexity.app.OpenVoiceInAppIntent,Open Voice in App in Perplexity,action_external_app
+com.sindresorhus.Actions.TransformTextWithJavaScriptIntent,Transform Text with JavaScript through Sindresorhus,action_external_app
+com.sindresorhus.Actions.ColorIntent,Color through Sindresorhus,action_external_app
+ke.bou.GizmoPack.QueryDocumentIntent,Query Document in GizmoPack,action_external_app
+ke.bou.WidgetPack.ModifierOpacityIntent,Modifier Opacity in WidgetPack,action_external_app
+dev.fuxiao.app.Hamster.RimeDeployIntent,Rime Deploy in Hamster,action_external_app

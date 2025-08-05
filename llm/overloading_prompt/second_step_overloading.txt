@@ -1,0 +1,6 @@
+**Task:**
+1. For each **repeat-exfiltration/control pair** identified in the Shortcut’s text representation:
+- Check  whether the repetition can be executed automatically or if it depends on user input, conditional logic (e.g., if/else actions), or manual confirmation steps (such as “Ask (attachment)” or a user prompt).
+- If the loop or repeated action requires user interaction or is contingent on a condition that might not be met automatically, then it should not be considered an overloading attack.
+- Provide brief, clear reasoning based on the repeated actions that are repeated over at least 30 times and potentially cause denial or interrupt on service.
+2. Conclude your reasoning with a definitive statement: "Yes, this shortcut constitutes an overloading attack." or "No, this shortcut does not constitute an overloading attack." If the repeat count depends on user input or data such as Repeat for each item, you should answer: "Maybe."

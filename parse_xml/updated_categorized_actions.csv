@@ -1,0 +1,496 @@
+Action Name,Prompt Description,Action Function,Attack Operations
+is.workflow.actions.addnewcontact,Add New Contact,action_add_new_contact,Data Insertion
+com.apple.mobilenotes.AddTagsToNotesLinkAction,Add Tags to Notes,action_add_tag_notes,Data Insertion
+com.apple.mobilenotes.PinNotesLinkAction,Pin Notes,action_add_to_pinnote,Data Insertion
+is.workflow.actions.addframetogif,Add Frame to GIF,action_addframetogif,Data Insertion
+is.workflow.actions.addmusictoupnext,Add to Playing Next,action_addmusictoupnext,"Data Insertion, Resource Control"
+is.workflow.actions.addnewcalendar,Add New Calendar,action_addnewcalendar,Data Insertion
+is.workflow.actions.addnewevent,Add New Event,action_addnewevent,Data Insertion
+is.workflow.actions.addnewreminder,Add New Reminder,action_addnewreminder,Data Insertion
+is.workflow.actions.address,Street Address,action_address,Data Insertion
+is.workflow.actions.addtoplaylist,Add to Playlist,action_addtoplaylist,"Data Insertion, Resource Control"
+is.workflow.actions.adjustdate,Adjust Date,action_adjustdate,None
+is.workflow.actions.airdropdocument,AirDrop,action_airdropdocument,None
+is.workflow.actions.airplanemode.set,Set Airplane Mode,action_airplanemode_set,Resource Control
+is.workflow.actions.alert,Show Alert,action_alert,None
+is.workflow.actions.appearance,Set Appearance,action_appearance,Resource Control
+is.workflow.actions.appendnote,Append to Note,action_appendnote,None
+is.workflow.actions.appendvariable,Add to Variable,action_appendvariable,Data Insertion
+is.workflow.actions.ask,Ask for Input,action_ask,None
+is.workflow.actions.avairyeditphoto,Markup,action_avairyeditphoto,None
+is.workflow.actions.base64encode,Base64 Encode,action_base64encode,None
+is.workflow.actions.bluetooth.set,Set Bluetooth,action_bluetooth_set,Resource Control
+is.workflow.actions.calculateexpression,Calculate Expression,action_calculateexpression,None
+com.apple.mobilephone.call,Call,action_call,None
+com.apple.mobiletimer.CancelTimerIntent,Cancel Timer,action_cancel_timer,None
+is.workflow.actions.cellulardata.set,Set Cellular Data,action_cellulardata_set,Resource Control
+com.apple.mobilemail.MailFocusConfigurationAction,Set Mail Focus Filter,action_change_focus_mail,Resource Control
+com.apple.VoiceMemos.ChangeRecordingPlaybackSetting,Change Recording Playback Setting,action_change_setting_recording,Resource Control
+is.workflow.actions.choosefromlist,Choose from List,action_choosefromlist,None
+is.workflow.actions.choosefrommenu,Choose from Menu,action_choosefrommenu,None
+is.workflow.actions.clearupnext,Clear Playing Next,action_clearupnext,"Resource Control, Trace Hiding"
+is.workflow.actions.comment,Comment,action_comment,None
+is.workflow.actions.compresspdf,Optimize File Size of PDF,action_compresspdf,None
+is.workflow.actions.conditional,If,action_conditional,None
+is.workflow.actions.contacts,Contacts,action_contacts,None
+is.workflow.actions.converttimezone,Convert Time Zone,action_converttimezone,None
+is.workflow.actions.correctspelling,Correct Spelling,action_correctspelling,None
+is.workflow.actions.count,Count,action_count,None
+com.apple.mobiletimer-framework.MobileTimerIntents.MTCreateAlarmIntent,Add Alarm,action_create_alarm,Data Insertion
+is.workflow.actions.alarm.create,Create Alarm,action_create_alarm,Data Insertion
+com.apple.mobilenotes.CreateFolderLinkAction,Create Folder,action_create_note_folder,Data Insertion
+com.apple.VoiceMemos.RecordVoiceMemoIntent,Create Recoding,action_create_recording,Data Insertion
+is.workflow.actions.sirikit.donation.handle,Create Recording,action_create_recording,Data Insertion
+com.apple.reminders.TTRCreateListAppIntent,Create Reminder List,action_create_remainderlist,Data Insertion
+com.apple.shortcuts.CreateWorkflowAction,Create Shortcut,action_create_shortcut,Data Insertion
+com.apple.mobilenotes.CreateTagLinkAction,Create Tag,action_create_tag_notes,Data Insertion
+com.apple.mobilenotes.SharingExtension,Create Note,action_createnote,Data Insertion
+is.workflow.actions.createplaylist,Create Playlist,action_createplaylist,"Data Insertion, Resource Control"
+is.workflow.actions.date,Date,action_date,None
+is.workflow.actions.delay,Wait,action_delay,None
+com.apple.mobiletimer.DeleteAlarmIntent,Delete Alarm,action_delete_alarm,Trace Hiding
+com.apple.mobilenotes.DeleteFoldersLinkAction,Delete Folders,action_delete_note_folder,Trace Hiding
+com.apple.VoiceMemos.DeleteRecording,Delete Recording,action_delete_recording,Trace Hiding
+com.apple.mobilenotes.DeleteTagsLinkAction,Delete Tags,action_delete_tag_notes,Trace Hiding
+com.apple.mobilenotes.DeleteNotesLinkAction,Delete Notes,action_deletenote,Trace Hiding
+is.workflow.actions.deletephotos,Delete Photos,action_deletephoto,Trace Hiding
+com.apple.shortcuts.DeleteWorkflowAction,Delete Shortcut,action_deleteworkflow,Trace Hiding
+is.workflow.actions.detect.address,Get Address from Input,action_detect_address,"Data Collection, Data Insertion"
+is.workflow.actions.detect.contacts,Get Contacts from Input,action_detect_contacts,Data Collection
+is.workflow.actions.detect.date,Get Date from Input,action_detect_date,Data Collection
+is.workflow.actions.detect.dictionary,Get Dictionary from Input,action_detect_dictionary,Data Collection
+is.workflow.actions.detect.emailaddress,Get Email Address from Input,action_detect_emailaddress,"Data Collection, Data Insertion"
+is.workflow.actions.detect.images,Get Images from Input,action_detect_images,Data Collection
+is.workflow.actions.detect.link,Get URLs from Input,action_detect_link,Data Collection
+is.workflow.actions.detect.number,Get Number from Input,action_detect_number,Data Collection
+is.workflow.actions.detect.phonenumber,Get Phone Number from Input,action_detect_phonenumber,Data Collection
+is.workflow.actions.detect.text,Get Text From Input,action_detect_text,Data Collection
+is.workflow.actions.detectlanguage,Detect Language,action_detectlanguage,None
+is.workflow.actions.dictatetext,Dictate Text,action_dictatetext,None
+is.workflow.actions.dictionary,Dictionary,action_dictionary,None
+is.workflow.actions.dismisssiri,Dismiss Siri and Continue,action_dismisssiri,None
+is.workflow.actions.dnd.getfocus,Get Current Focus,action_dnd_getfocus,Data Collection
+is.workflow.actions.dnd.set,Set Focus,action_dnd_set,Resource Control
+is.workflow.actions.documentpicker.open,Get File from Folder,action_documentpicker_open,Data Collection
+is.workflow.actions.documentpicker.save,Save File,action_documentpicker_save,Data Insertion
+is.workflow.actions.downloadurl,Get Contents of URL,action_downloadurl,Data Collection
+com.apple.mobiletimer.EditSleepAlarmIntent,Edit Sleep Alarm,action_edit_alarm,None
+is.workflow.actions.email,Email Address,action_email,Data Insertion
+is.workflow.actions.encodemedia,Encode Media,action_encodemedia,None
+is.workflow.actions.exit,Stop Shortcut,action_exit,Resource Control
+is.workflow.actions.exportsong,Select Music,action_exportsong,Data Exfiltration
+is.workflow.actions.extracttextfromimage,Extract Text from Image,action_extracttextfromimage,Data Collection
+com.apple.facetime.facetime,FaceTime,action_facetime,None
+is.workflow.actions.file,File,action_file,None
+is.workflow.actions.folder,Folder,action_file,None
+is.workflow.actions.file.append,Append to Text File,action_file_append,None
+is.workflow.actions.file.createfolder,Create Folder,action_file_createfolder,Data Insertion
+is.workflow.actions.file.delete,Delete Files,action_file_delete,Trace Hiding
+is.workflow.actions.file.getfoldercontents,Get Contents of Folder,action_file_getfoldercontents,Data Collection
+is.workflow.actions.file.getlink,Get Link to File,action_file_getlink,Data Collection
+is.workflow.actions.file.move,Move File,action_file_move,None
+is.workflow.actions.file.rename,Rename File,action_file_rename,None
+is.workflow.actions.file.select,Select File,action_file_select,None
+com.apple.mobiletimer-framework.MobileTimerIntents.MTGetAlarmsIntent,Find Alarms,action_filter_alarms,None
+is.workflow.actions.filter.articles,Filter Articles,action_filter_articles,None
+is.workflow.actions.filter.calendarevents,Find Calendar Events,action_filter_calendarevents,None
+is.workflow.actions.filter.contacts,Find Contacts,action_filter_contacts,None
+is.workflow.actions.filter.eventattendees,Filter Event Attendees,action_filter_eventattendees,None
+is.workflow.actions.filter.files,Filter Files,action_filter_files,None
+is.workflow.actions.filter.health.quantity,Find Health Samples,action_filter_health_quality,None
+is.workflow.actions.filter.images,Filter Images,action_filter_images,None
+is.workflow.actions.filter.locations,Filter Locations,action_filter_locations,None
+is.workflow.actions.filter.music,Find Music,action_filter_music,None
+is.workflow.actions.filter.notes,Find Notes,action_filter_notes,None
+is.workflow.actions.filter.photos,Find Photos,action_filter_photos,None
+is.workflow.actions.filter.reminders,Find Reminders,action_filter_reminders,None
+com.apple.mobilesafari.TabEntity,Find Tabs,action_filter_tab,None
+is.workflow.actions.flashlight,Set Flashlight,action_flashlight,Resource Control
+is.workflow.actions.format.date,Format Date,action_format_date,None
+is.workflow.actions.format.filesize,Format File Size,action_format_filesize,None
+is.workflow.actions.format.number,Format Number,action_format_number,None
+is.workflow.actions.generatebarcode,Generate QR Code,action_generatebarcode,None
+com.apple.mobiletimer.GetCurrentTimerDetailsIntent,Get Current Timer,action_get_detail_timer,Data Collection
+is.workflow.actions.get.playlist,Get Playlist,action_get_playlist,"Data Collection, Resource Control"
+is.workflow.actions.getarticle,Get Article,action_getarticle,Data Collection
+is.workflow.actions.getbatterylevel,Get Battery Status,action_getbatterylevel,Data Collection
+is.workflow.actions.getclipboard,Get Clipboard,action_getclipboard,Data Collection
+is.workflow.actions.getcurrentlocation,Get Current Location,action_getcurrentlocation,Data Collection
+is.workflow.actions.getcurrentsong,Get Current Song,action_getcurrentsong,Data Collection
+is.workflow.actions.getdevicedetails,Get Device Details,action_getdevicedetails,Data Collection
+is.workflow.actions.getdirections,Open Directions,action_getdirections,Data Collection
+is.workflow.actions.getdistance,Get Distance,action_getdistance,Data Collection
+is.workflow.actions.getepisodesforpodcast,Get Episodes of Podcast,action_getepisodesforpodcast,Data Collection
+is.workflow.actions.getframesfromimage,Get Frames from Image,action_getframesfromimage,Data Collection
+is.workflow.actions.gethalfwaypoint,Get Halfway Point,action_gethalfwaypoint,Data Collection
+is.workflow.actions.gethomeaccessorystate,Get State of Home,action_gethomeaccessory,Data Collection
+is.workflow.actions.gethtmlfromrichtext,Make HTML from Rich Text,action_gethtmlfromrichtext,Data Collection
+is.workflow.actions.getipaddress,Get Current IP Address,action_getipaddress,"Data Collection, Data Insertion"
+is.workflow.actions.getitemfromlist,Get Item from List,action_getitemfromlist,Data Collection
+is.workflow.actions.getitemname,Get Name,action_getitemname,Data Collection
+is.workflow.actions.getitemtype,Get Type,action_getitemtype,Data Collection
+is.workflow.actions.getlastphoto,Get Last Photos,action_getlastphoto,Data Collection
+is.workflow.actions.getlastscreenshot,Get Latest Screenshots,action_getlastscreenshot,Data Collection
+is.workflow.actions.getlastvideo,Get Latest Videos,action_getlastvideo,Data Collection
+is.workflow.actions.getlatestbursts,Get Latest Bursts,action_getlatestburst,Data Collection
+is.workflow.actions.getlatestlivephotos,Get Latest Live Photos,action_getlatestlivephotos,Data Collection
+is.workflow.actions.getlatestphotoimport,Get Last Import,action_getlatestphotoimport,Data Collection
+is.workflow.actions.getmapslink,Get Maps URL,action_getmapslink,Data Collection
+is.workflow.actions.getmarkdownfromrichtext,Make Markdown from Rich Text,action_getmarkdownfromrichtext,Data Collection
+is.workflow.actions.getmyworkflows,Get My Shortcuts,action_getmyworkflows,Data Collection
+is.workflow.actions.getnameofemoji,Get Name of Emoji,action_getnameofemoji,Data Collection
+is.workflow.actions.getonscreencontent,'Get What\'s On Screen',action_getonscreencontent,Data Collection
+com.apple.ShortcutsActions.GetOrientationAction,Get Orientation,action_getorientation,Data Collection
+is.workflow.actions.getparkedcarlocation,Get Parked Car Location,action_getparkedcarlocation,Data Collection
+com.apple.ShortcutsActions.GetPhysicalActivity,Get Physical Activity,action_getphysicalactivity,Data Collection
+is.workflow.actions.getpodcastsfromlibrary,Get Podcasts from Library,action_getpodcastsfromlibrary,Data Collection
+is.workflow.actions.getrichtextfromhtml,Make Rich Text from HTML,action_getrichtextfromhtml,Data Collection
+is.workflow.actions.getrichtextfrommarkdown,Make Rich Text from Markdown,action_getrichtextfrommarkdown,Data Collection
+is.workflow.actions.gettext,Text,action_gettext,Data Collection
+is.workflow.actions.gettextfrompdf,Get Text from PDF,action_gettextfrompdf,Data Collection
+is.workflow.actions.gettimebetweendates,Get Time Between Dates,action_gettimebetweendates,Data Collection
+is.workflow.actions.gettraveltime,Get Travel Time,action_gettraveltime,Data Collection
+is.workflow.actions.gettypeaction,Get Item Type,action_gettypeaction,Data Collection
+is.workflow.actions.getupcomingevents,Get Upcoming Events,action_getupcomingevents,Data Collection
+is.workflow.actions.getupcomingreminders,Get Upcoming Reminders,action_getupcomingreminders,Data Collection
+is.workflow.actions.geturlcomponent,Get Component of URL,action_geturlcomponent,Data Collection
+is.workflow.actions.getvalueforkey,Get Dictionary Value,action_getvalueforkey,Data Collection
+is.workflow.actions.getvariable,Get Variable,action_getvariable,Data Collection
+is.workflow.actions.getwebpagecontents,Get Contents of Web Page,action_getwebpagecontents,Data Collection
+is.workflow.actions.getwifi,Get Network Details,action_getwifi,Data Collection
+is.workflow.actions.giphy,Find Giphy GIFs,action_giphy,None
+is.workflow.actions.handoffplayback,Handoff Playback,action_handoffplayback,Resource Control
+is.workflow.actions.hash,Generate Hash,action_hash,None
+is.workflow.actions.health.quantity.log,Log Health Sample,action_health_quantity_log,None
+is.workflow.actions.health.workout.log,Log Workout,action_health_workout_log,None
+is.workflow.actions.workout.start,Start Workout,action_health_workout_log,None
+is.workflow.actions.runscene,Run Home Scene,action_health_workout_log,None
+is.workflow.actions.homeaccessory,Control Home,action_homeaccessory,Resource Control
+is.workflow.actions.image.combine,Combine Images,action_image_combine,None
+is.workflow.actions.image.convert,Convert Image,action_image_convert,None
+is.workflow.actions.image.crop,Crop Image,action_image_crop,None
+is.workflow.actions.image.flip,Flip Image,action_image_flip,None
+is.workflow.actions.image.mask,Mask Image,action_image_mask,Trace Hiding
+is.workflow.actions.image.removebackground,Remove Image Background,action_image_removebackground,Trace Hiding
+is.workflow.actions.image.rotate,Rotate Image/Video,action_image_rotate,None
+is.workflow.actions.intercom,Intercom,action_intercom,None
+com.apple.mobiletimer.LapStopwatchIntent,Lap Stopwatch,action_lap_stopwatch,Resource Control
+is.workflow.actions.list,List,action_list,None
+is.workflow.actions.listeningmode.set,Set Noise Control Mode,action_listeningmode_set,Resource Control
+is.workflow.actions.location,Location,action_location,None
+is.workflow.actions.lockscreen,Lock Screen,action_lockscreen,None
+is.workflow.actions.lowpowermode.set,Set Low Power Mode,action_lowpowermode_set,Resource Control
+is.workflow.actions.makegif,Make GIF,action_makegif,None
+is.workflow.actions.makeimagefrompdfpage,Make Image from PDF Page,action_makeimagefrompdfpage,None
+is.workflow.actions.makeimagefromrichtext,Make Image from Rich Text,action_makeimagefromrichtext,None
+is.workflow.actions.makepdf,Make PDF,action_makepdf,None
+is.workflow.actions.makespokenaudiofromtext,Make Spoken Audio from Text,action_makespokenaudiofromtext,None
+is.workflow.actions.makevideofromgif,Make Video from GIF,action_makevideofromgif,None
+is.workflow.actions.makezip,Make Archive,action_makezip,None
+is.workflow.actions.math,Calculate,action_math,None
+is.workflow.actions.measurement.convert,Convert Measurement,action_measurement_convert,None
+is.workflow.actions.measurement.create,Measurement,action_measurement_create,Data Insertion
+com.apple.mobileslideshow.StreamShareService,Post to Shared Album,action_mobileslideshow_streamshareservice,Data Exfiltration
+com.apple.mobilenotes.MoveNotesToFolderLinkAction,Move Notes to Folder,action_move_notes,None
+is.workflow.actions.nightshift.set,Set Night Shift,action_nightshift_set,Resource Control
+com.apple.mobilenotes.ChangeSettingLinkAction,Change Notes Setting,action_note_changesetting,Resource Control
+com.apple.mobilenotes.OpenAccountLinkAction,Open Account,action_note_openaccount,None
+is.workflow.actions.nothing,Nothing,action_nothing,None
+is.workflow.actions.notification,Show Notification,action_notification,None
+is.workflow.actions.number,Number,action_number,None
+is.workflow.actions.number.random,Random Number between,action_number_random,None
+com.apple.ShortcutsActions.OpenCameraAction,Open Camera Mode,action_open_camera,None
+com.apple.Passbook.OpenPassIntent,Open Card,action_open_card,None
+com.apple.mobilemail.OpenMailboxEntityAction,Open Mailbox,action_open_mailbox,None
+com.apple.reminders.TTROpenSmartListAppIntent,Open Smart List,action_open_smartlist,None
+com.apple.mobilenotes.OpenTagLinkAction,Open Tag,action_open_tag_notes,None
+com.apple.mobilenotes.OpenAppLocationLinkAction,Open Notes View,action_open_view_note,None
+is.workflow.actions.openapp,Open App,action_openapp,None
+is.workflow.actions.openin,Open File,action_openin,None
+is.workflow.actions.openpasswords,Show Passwords,action_openpasswords,None
+com.apple.mobiletimer.OpenTab,Open Tab,action_opentab,None
+is.workflow.actions.openurl,Open URLs,action_openurl,None
+is.workflow.actions.openworkflow,Open Shortcut,action_openworkflow,None
+is.workflow.actions.openxcallbackurl,Open X-Callback URL,action_openxcallbackurl,None
+is.workflow.actions.orientationlock.set,Set Orientation Lock,action_orientationlock_set,Resource Control
+is.workflow.actions.output,Stop and Output,action_output,Resource Control
+is.workflow.actions.overlayimageonimage,Overlay Image,action_overlayimageonimage,None
+is.workflow.actions.overlaytext,Overlay Text,action_overlaytext,None
+com.apple.mobiletimer.PauseTimerIntent,Pause Timer,action_pause_timer,Resource Control
+is.workflow.actions.pausemusic,Play/Pause,action_pausemusic,Resource Control
+is.workflow.actions.personalhotspot.password.get,Get Hotspot Password,action_personalhotspot_password_get,Data Collection
+is.workflow.actions.personalhotspot.password.set,Set Hotspot Password,action_personalhotspot_password_get,"Data Collection, Resource Control"
+is.workflow.actions.personalhotspot.set,Set Personal Hotspot,action_personalhotspot_set,Resource Control
+is.workflow.actions.phonenumber,Phone Number,action_phonenumber,None
+is.workflow.actions.photos.createalbum,Create Album,action_photo_createalbum,Data Insertion
+com.apple.NanoSettings.NPRFPingMyPhoneIntent,Ping My Phone with lights on Watch,action_pingmyphone,None
+com.apple.VoiceMemos.PlaybackVoiceMemoIntent,Play Recording,action_play_recording,Resource Control
+is.workflow.actions.playmusic,Play Music,action_playmusic,Resource Control
+is.workflow.actions.playpodcast,Play Podcast,action_playpodcast,Resource Control
+is.workflow.actions.playsound,Play Sound,action_playsound,Resource Control
+is.workflow.actions.podcasts.subscribe,Follow Podcast,action_podcasts_subscribe,None
+is.workflow.actions.posters.get,Get All Wallpapers,action_posters_get,Data Collection
+is.workflow.actions.posters.switch,Switch Between Wallpapers,action_posters_switch,None
+is.workflow.actions.previewdocument,Quick Look,action_previewdocument,None
+is.workflow.actions.print,Print,action_print,None
+is.workflow.actions.properties.appstore,Get Details of Apple Store App,action_properties_appstore,Data Collection
+is.workflow.actions.properties.articles,Get Details of Article,action_properties_articles,Data Collection
+is.workflow.actions.properties.calendarevents,Get Details of Calendar Events,action_properties_calendarevents,Data Collection
+is.workflow.actions.properties.contacts,Get Details of Contact,action_properties_contacts,Data Collection
+is.workflow.actions.properties.eventattendees,Get Details of Event Attendees,action_properties_eventattendees,Data Collection
+is.workflow.actions.properties.files,Get Details of File,action_properties_files,Data Collection
+is.workflow.actions.properties.health.quantity,Get Details of Health Sample,action_properties_health_quantity,Data Collection
+is.workflow.actions.properties.images,Get Details of Image,action_properties_images,Data Collection
+is.workflow.actions.properties.itunesstore,Get Details of iTunes Store Item,action_properties_itunes,Data Collection
+is.workflow.actions.properties.locations,Get Details of Location,action_properties_location,Data Collection
+is.workflow.actions.properties.music,Get Details of Music,action_properties_music,Data Collection
+is.workflow.actions.properties.parkedcar,Get Details of Parked Car,action_properties_parkedcar,Data Collection
+is.workflow.actions.properties.podcast,Get Details of Podcast Episode,action_properties_podcast,Data Collection
+is.workflow.actions.properties.podcastshow,Get Details of Podcast,action_properties_podcasthow,Data Collection
+is.workflow.actions.properties.reminders,Get Details of Reminder,action_properties_reminders,Data Collection
+is.workflow.actions.properties.safariwebpage,Get Details of Safari Web Page,action_properties_safariwebpage,Data Collection
+is.workflow.actions.readinglist,Add to Reading List,action_readinglist,"Data Collection, Data Insertion"
+is.workflow.actions.reboot,Shutdown,action_reboot,None
+com.apple.musicrecognition.RecognizeMusicIntent,Recognize Music,action_recognize_music,None
+is.workflow.actions.recordaudio,Record Audio,action_recordaudio,None
+is.workflow.actions.reminders.showlist,Open Reminders List,action_reminders_showlist,None
+com.apple.mobilenotes.RemoveTagsFromNotesLinkAction,Remove Tags from Notes,action_remove_tag_notes,Trace Hiding
+is.workflow.actions.removeevents,Remove Events,action_removeevents,Trace Hiding
+is.workflow.actions.removefromalbum,Remove from Photo Album,action_removefromalbum,Trace Hiding
+is.workflow.actions.removereminders,Remove Reminders,action_removereminders,Trace Hiding
+is.workflow.actions.repeat.count,Repeat,action_repeat_count,None
+is.workflow.actions.repeat.each,Repeat with Each,action_repeat_each,None
+is.workflow.actions.ride.requestride,Request Ride,action_requestride,None
+com.apple.ShortcutsActions.ResetCellularDataStatisticsAction,Reset Cellular Data Statistics,action_reset_cellulardata_statistics,Resource Control
+com.apple.shortcuts.ResetCellularDataStatisticsAction,Reset Cellular Data Statistics,action_reset_cellulardata_statistics,Resource Control
+com.apple.mobiletimer.ResetStopwatchIntent,Reset Stopwatch,action_reset_stopwatch,Resource Control
+is.workflow.actions.image.resize,Resize Image,action_resize,None
+com.apple.mobiletimer.ResumeTimerIntent,Resume Timer,action_resume_timer,None
+is.workflow.actions.returntohomescreen,Go to Home Screen,action_returntohomescreen,None
+is.workflow.actions.round,Round Number,action_round,None
+is.workflow.actions.rss,Get Items from RSS Feed,action_rss,Data Collection
+is.workflow.actions.rss.extract,Get RSS Feed from Page,action_rss_extract,Data Collection
+is.workflow.actions.runextension,Share with Apps,action_runextension,Data Exfiltration
+is.workflow.actions.runjavascriptonwebpage,Run JavaScript on Active Safari Tab,action_runjavascriptonwebpage,None
+is.workflow.actions.runsshscript,Run Script over SSH,action_runsshscript,None
+is.workflow.actions.runworkflow,Run Shortcut,action_runworkflow,None
+com.apple.mobilesafari.CloseTab,Close Safari Tab,action_safari_closetab,Resource Control
+is.workflow.actions.savetocameraroll,Save to Photo Album,action_savetocameraroll,Data Insertion
+is.workflow.actions.scanbarcode,Scan QR or Barcode,action_scanbarcode,Data Collection
+com.apple.reminders.TTRSearchRemindersAppIntent,Search Reminders,action_search_inreminder,None
+com.apple.mobilemail.SearchMessagesAction,Search in Mail,action_search_message_mail,None
+com.apple.shortcuts.SearchShortcutsAction,Search in Shortcuts,action_search_shortcut,None
+is.workflow.actions.searchappstore,Find Apple Store Apps,action_searchappstore,None
+com.apple.DocumentsApp.SearchFile,Search in Files,action_searchfile,None
+is.workflow.actions.searchitunes,Find iTunes Store Items,action_searchitunes,None
+is.workflow.actions.searchlocalbusinesses,Find Places,action_searchlocalbusinesses,None
+is.workflow.actions.searchmaps,Open in Maps,action_searchmap,None
+is.workflow.actions.searchpodcasts,Find Podcasts,action_searchpodcasts,None
+is.workflow.actions.searchweb,Search Web,action_searchweb,None
+is.workflow.actions.seek,Seek,action_seek,None
+com.apple.VoiceMemos.SelectRecording,Select Recording,action_select_recording,None
+is.workflow.actions.selectcontacts,Select Contact,action_selectcontacts,None
+is.workflow.actions.selectemail,Select Email Address,action_selectemail,Data Insertion
+is.workflow.actions.selectphone,Select Phone Number,action_selectphone,None
+is.workflow.actions.selectphoto,Select Photos,action_selectphoto,None
+is.workflow.actions.sendemail,Send Email,action_sendemail,"Data Insertion, Data Exfiltration"
+is.workflow.actions.sendmessage,Send Message,action_sendmessage,"Data Insertion, Data Exfiltration"
+com.apple.mobilecal.SetCalendarFocusConfiguration,Set Calendar Focus Filter,action_set_calendar_focus,Resource Control
+is.workflow.actions.setters.contacts,Edit Contact,action_set_contact,Resource Control
+com.apple.NanoSettings.NPRFSetSchoolTimeIntent,Set School Time on Watch,action_set_schooltime,Resource Control
+com.apple.NanoSettings.NPRFSetWaterLockIntent,Set Water Lock on Watch,action_set_waterlock,Resource Control
+is.workflow.actions.setairdropreceiving,Set AirDrop Receiving,action_setairdroppreceiving,Resource Control
+is.workflow.actions.setbrightness,Set Brightness,action_setbrightness,Resource Control
+is.workflow.actions.setclipboard,Copy to Clipboard,action_setclipboard,Resource Control
+com.apple.ShortcutsActions.SetDataRoamingAction,Set Data Roaming,action_setdataroaming,Resource Control
+com.apple.NanoSettings.NPRFSetFlashLightIntent,Set Flashlight on Watch,action_setflashlight,Resource Control
+is.workflow.actions.setitemname,Set Name,action_setitemname,Resource Control
+is.workflow.actions.setparkedcar,Set Parked Car,action_setparkedcar,Resource Control
+is.workflow.actions.setplaybackdestination,Change Playback Destination,action_setplaybackdestination,Resource Control
+is.workflow.actions.setters.calendarevents,Edit Calendar Event,action_setters_calendarevents,Resource Control
+is.workflow.actions.setters.reminders,Edit Reminder,action_setters_reminders,Resource Control
+is.workflow.actions.announcenotifications.set,Set Announce Notifications,action_setting_announcenotification,Resource Control
+com.apple.AccessibilityUtilities.AXSettingsShortcuts.AXToggleAssistiveTouchIntent,Set AssistiveTouch,action_setting_assistivetouch,Resource Control
+com.apple.AccessibilityUtilities.AXSettingsShortcuts.AXToggleAudioDescriptionsIntent,Set Audio Descriptions,action_setting_audiodescription,Resource Control
+com.apple.AccessibilityUtilities.AXSettingsShortcuts.AXToggleAutoAnswerCallsIntent,Auto-Answer Calls,action_setting_autoanswer,Resource Control
+com.apple.AccessibilityUtilities.AXSettingsShortcuts.AXSetBackgroundSoundIntent,Change Background Sounds,action_setting_backgroundsound,Resource Control
+com.apple.AccessibilityUtilities.AXSettingsShortcuts.AXSetBackgroundSoundVolumeIntent,Set Background Sound Volume,action_setting_backgroundsounds,Resource Control
+com.apple.AccessibilityUtilities.AXSettingsShortcuts.AXToggleCaptionsIntent,Set Closed Captions+SDH,action_setting_captionssdh,Resource Control
+com.apple.AccessibilityUtilities.AXSettingsShortcuts.AXToggleClassicInvertIntent,Set Classic Invert,action_setting_classicinvert,Resource Control
+com.apple.AccessibilityUtilities.AXSettingsShortcuts.AXToggleColorFiltersIntent,Set Color Filters,action_setting_colorfilter,Resource Control
+com.apple.Preferences.DeveloperSettingsDeepLink,Find Developer Settings,action_setting_develpersetting,Resource Control
+com.apple.AccessibilityUtilities.AXSettingsShortcuts.AXToggleLEDFlashIntent,Set LED Flash,action_setting_flashlight,Resource Control
+com.apple.AccessibilityUtilities.AXSettingsShortcuts.AXToggleContrastIntent,Set Increase Contrast,action_setting_increasecontrast,Resource Control
+com.apple.AccessibilityUtilities.AXSettingsShortcuts.AXSetLeftRightBalanceIntent,Set Left/Right Audio Balance,action_setting_leftrightbalance,Resource Control
+com.apple.AccessibilityUtilities.AXSettingsShortcuts.AXToggleLiveCaptionsIntent,Set Live Captions,action_setting_livecaption,Resource Control
+com.apple.AccessibilityUtilities.AXSettingsShortcuts.AXStartMagnifierIntent,Open Magnifier,action_setting_magnifier,Resource Control
+com.apple.AccessibilityUtilities.AXSettingsShortcuts.AXToggleMonoAudioIntent,Set Mono Audio,action_setting_monoaudio,Resource Control
+com.apple.Preferences.OpenSoundsAndHapticsDeepLinks,Open Sounds & Haptics Settings,action_setting_opens,Resource Control
+com.apple.AccessibilityUtilities.AXSettingsShortcuts.AXToggleBackgroundSoundsIntent,Set Background Sounds,action_setting_setbackgroundsound,Resource Control
+com.apple.AccessibilityUtilities.AXSettingsShortcuts.AXToggleSmartInvertIntent,Set Smart Invert,action_setting_smartinvert,Resource Control
+com.apple.AccessibilityUtilities.AXSettingsShortcuts.AXToggleSoundDetectionIntent,Set Sound Detection,action_setting_soundrecognition,Resource Control
+com.apple.AccessibilityUtilities.AXSettingsShortcuts.AXSetLargeTextIntent,Set Text Size,action_setting_textsize,Resource Control
+com.apple.AccessibilityUtilities.AXSettingsShortcuts.AXToggleVoiceOverIntent,Set VoiceOver,action_setting_voiceover,Resource Control
+com.apple.AccessibilityUtilities.AXSettingsShortcuts.AXToggleZoomIntent,Set Zoom,action_setting_zoom,Resource Control
+is.workflow.actions.setvalueforkey,Set Dictionary Value,action_setvalueforkey,Resource Control
+is.workflow.actions.setvariable,Set Variable,action_setvariable,Resource Control
+is.workflow.actions.setvolume,Set Volume,action_setvolume,Resource Control
+is.workflow.actions.share,Share,action_share,Data Exfiltration
+com.apple.mobilenotes.ICNotesFolderIntent,Show Notes Folder,action_show_notefolder,None
+com.apple.mobilenotes.ShowQuickNoteIntent,Show Quick Note,action_show_quicknote,None
+is.workflow.actions.showdefinition,Show Definition,action_showdefinition,None
+is.workflow.actions.showincalendar,Open in Calendar,action_showincalendar,None
+is.workflow.actions.showinstore,Show in iTunes Store,action_showinstore,None
+is.workflow.actions.shownote,Open Note,action_shownote,None
+is.workflow.actions.showresult,Show Result,action_showresult,None
+is.workflow.actions.showwebpage,Show Web View,action_showwebpage,None
+is.workflow.actions.skipback,Skip Back,action_skipback,None
+is.workflow.actions.skipforward,Skip Forward,action_skipforward,None
+is.workflow.actions.speaktext,Speak Text,action_speaktext,None
+is.workflow.actions.splitpdf,Split PDF into Pages,action_splitpdf,None
+com.apple.AccessibilityUtilities.AXSettingsShortcuts.AXStartGuidedAccessIntent,Start Guided Access,action_start_guidedaccess,None
+com.apple.mobiletimer.StartStopwatchIntent,Start Stopwatch,action_start_stopwatch,Resource Control
+is.workflow.actions.statistics,Calculate Statistics,action_statistics,None
+is.workflow.actions.stocks.quote,Get Stock Price,action_stock_quote,Data Collection
+com.apple.VoiceMemos.StopRecording,Stop Recording,action_stop_recording,Resource Control
+com.apple.mobiletimer.StopStopwatchIntent,Stop Stopwatch,action_stop_stopwatch,Resource Control
+is.workflow.actions.takephoto,Take Photo,action_takephoto,None
+is.workflow.actions.takescreenshot,Take Screenshot,action_takescreenshot,None
+is.workflow.actions.takevideo,Take Video,action_takevideo,None
+is.workflow.actions.text.changecase,Change Case,action_text_changecase,None
+is.workflow.actions.text.combine,Combine Text,action_text_combine,None
+is.workflow.actions.text.match,Match Text,action_text_match,None
+is.workflow.actions.text.match.getgroup,Get Group from Matched Text,action_text_match_getgroup,Data Collection
+is.workflow.actions.text.replace,Replace Text,action_text_replace,None
+is.workflow.actions.text.split,Split Text,action_text_split,None
+is.workflow.actions.text.translate,Translate Text,action_text_translate,None
+com.apple.NanoSettings.NPRFSetTheaterModeIntent,Set Theater Mode on Watch,action_theatermode,Resource Control
+is.workflow.actions.timer.start,Start Timer,action_timer_start,None
+com.apple.mobiletimer-framework.MobileTimerIntents.MTToggleAlarmIntent,Toggle Alarm,action_toggle_turn_alarm,None
+is.workflow.actions.alarm.toggle,Toggle Alarm,action_toggle_turn_alarm,None
+com.apple.ShortcutsActions.SetSilentModeAction,Set Silent Mode,action_toggle_turnsilentmode,Resource Control
+com.apple.ShortcutsActions.TranscribeAudioAction,Transcribe Audio,action_transcribe_audio,None
+is.workflow.actions.trimvideo,Trim Media,action_trimvideo,None
+is.workflow.actions.truetone.set,Set True Tone,action_truetone_set,Resource Control
+com.apple.AccessibilityUtilities.AXSettingsShortcuts.AXToggleVoiceControlIntent,Set Voice Control,action_turn_voicecontrol,Resource Control
+is.workflow.actions.unzip,Extract Archive,action_unzip,Data Collection
+is.workflow.actions.url,URL,action_url,None
+is.workflow.actions.url.expand,Expand URL,action_url_expand,None
+is.workflow.actions.url.getheaders,Get Headers of URL,action_url_getheaders,Data Collection
+is.workflow.actions.urlencode,URL Encode,action_urlencode,None
+is.workflow.actions.useractivity.open,Open User Activity,action_user_activity_open,None
+is.workflow.actions.venmo.pay,Send Payment,action_venmo_pay,"Data Insertion, Data Exfiltration"
+is.workflow.actions.venmo.request,Request Money,action_venmo_request,None
+is.workflow.actions.vibrate,Vibrate Device,action_vibrate,None
+is.workflow.actions.viewresult,View Content Graph,action_viewresult,None
+is.workflow.actions.vpn.set,Set VPN,action_vpn_set,Resource Control
+is.workflow.actions.waittoreturn,Wait to Return,action_waittoreturn,None
+is.workflow.actions.wallpaper.set,Set Wallpaper Photo,action_wallpaper_set,Resource Control
+is.workflow.actions.properties.weather.conditions,Get Details of Weather Conditions,action_weather_condition,Data Collection
+is.workflow.actions.weather.currentconditions,Get Current Weather,action_weather_currentconditions,Data Collection
+is.workflow.actions.weather.forecast,Get Weather Forecast,action_weather_forecast,Data Collection
+com.apple.weather.OpenNotificationsConfigurationIntent,Open Notifications Configuration,action_weather_notification,None
+com.apple.weather.WeatherIntent,Show Weather,action_weather_weatherintent,None
+net.whatsapp.WhatsApp.openin,Send Photo via WhatsApp,action_whatsapp_openin,"Data Insertion, Data Exfiltration"
+net.whatsapp.WhatsApp.send,Send WhatsApp Message,action_whatsapp_send,"Data Insertion, Data Exfiltration"
+is.workflow.actions.wifi.set,Set Wi-Fi,action_wifi_set,Resource Control
+com.alexhay.ToolboxProForShortcuts.AverageColourIntent,External App Actions,action_external_app,None
+com.alexhay.ToolboxProForShortcuts.CreateMatteIntent,External App Actions,action_external_app,None
+com.burbn.instagram.openin,Post on Instagram,action_external_app,None
+is.workflow.actions.tweet,Tweet,action_external_app,None
+com.google.chrome.ios.OpenInChromeIntent,Open URLs in Chrome,action_external_app,None
+is.workflow.actions.shazamMedia,Recognize Music,action_external_app,None
+com.apple.TVRemoteUIService.LaunchApplicationIntent,Open TV App,action_external_app,None
+com.apple.TVRemoteUIService.LaunchRemoteIntent,Open Remote Control TV,action_external_app,Resource Control
+com.openai.chat.AskIntent,Ask ChatGPT,action_external_app,None
+com.rivian.ios.consumer.OpenFrunkIntent,Open Frunk,action_external_app,None
+com.apple.TVRemoteUIService.WakeAppleTVIntent,Wake Apple TV,action_external_app,None
+com.apple.TVRemoteUIService.SleepAppleTVIntent,Sleep Apple TV,action_external_app,None
+com.rivian.ios.consumer.CloseFrunkIntent,Close Frunk,action_external_app,None
+com.sindresorhus.Actions.IsReachableIntent,Check Connection,action_external_app,Resource Control
+com.google.chrome.ios.openurl,Open URL in Chrome,action_external_app,None
+com.alexhay.ToolboxProForShortcuts.CropIntent,Crop,action_external_app,None
+dk.simonbs.Scriptable.RunScriptInlineIntent,Run Script,action_external_app,None
+is.workflow.actions.pocket.add,Add to Pocket,action_external_app,Data Insertion
+is.workflow.actions.postonfacebook,Post on Facebook,action_external_app,None
+is.workflow.actions.imgur.upload,Upload to Imgur,action_external_app,"Data Insertion, Data Exfiltration"
+com.microsoft.msedge.OpenInChromeIntent,Open in Chrome,action_external_app,None
+com.apple.Pages.TSADocumentOpenIntent,Open Pages Document,action_external_app,None
+com.apple.TVRemoteUIService.PauseContentIntent,Pause Content on TV,action_external_app,Resource Control
+com.apple.TVRemoteUIService.SkipContentIntent,Skip Content on TV,action_external_app,None
+com.apple.TVRemoteUIService.LaunchScreenSaverIntent,Launch Screen Saver on TV,action_external_app,"Data Insertion, Resource Control"
+com.apple.TVRemoteUIService.SwitchUserAccountIntent,Switch User Account on TV,action_external_app,None
+com.apple.TVRemoteUIService.ToggleSystemAppearanceIntent,Toggle System Appearance on TV,action_external_app,None
+com.apple.TVRemoteUIService.ToggleCaptionsIntent,Toggle Captions on TV,action_external_app,None
+com.apple.TVRemoteUIService.ReduceLoudSoundsIntent,Reduce Loud Sounds on TV,action_external_app,None
+com.alexhay.ToolboxProForShortcuts.TrimTextIntent,Trim Text,action_external_app,None
+com.alexhay.ToolboxProForShortcuts.InternetConnectionIntent,Check Internet Connection,action_external_app,Resource Control
+com.alexhay.ToolboxProForShortcuts.IsVPNConnectedIntent,Check VPN Connection,action_external_app,Resource Control
+com.alexhay.ToolboxProForShortcuts.DeviceStorageIntent,Get Device Storage,action_external_app,Data Collection
+com.alexhay.ToolboxProForShortcuts.CheckIfInstalledIntent,Check if App Installed,action_external_app,None
+com.alexhay.ToolboxProForShortcuts.SortListIntent,Sort List,action_external_app,None
+com.alexhay.ToolboxProForShortcuts.ViewMapIntent,View Map,action_external_app,None
+com.alexhay.ToolboxProForShortcuts.DeviceDetailsIntent,Get Device Details,action_external_app,Data Collection
+com.alexhay.ToolboxProForShortcuts.PerformCalculationIntent,Calculate,action_external_app,None
+com.alexhay.ToolboxProForShortcuts.DeviceLanguageIntent,Get Device Language,action_external_app,Data Collection
+com.alexhay.ToolboxProForShortcuts.BatteryStatusIntent,Get Battery Status,action_external_app,Data Collection
+com.alexhay.ToolboxProForShortcuts.QuickLookExtendedIntent,Quick Look,action_external_app,None
+is.workflow.actions.evernote.get,Get EverNote,action_external_app,Data Collection
+is.workflow.actions.evernote.delete,Delete EverNote,action_external_app,Trace Hiding
+is.workflow.actions.evernote.append,Append to EverNote,action_external_app,None
+com.winterowls.Night-Shift.RandomWallpaperIntent,Random Wallpaper,action_external_app,None
+com.brave.ios.browser.OpenWebsiteIntent,Open Website in Brave,action_external_app,None
+com.google.GoogleMobile.GoogleForQueryIntent,Search Google for,action_external_app,None
+net.shinyfrog.bear-IOS.create,Create Bear Note,action_external_app,Data Insertion
+is.workflow.actions.runapplescript,Run AppleScript,action_external_app,None
+com.sindresorhus.Actions.IsOnlineIntent,Is Online,action_external_app,None
+com.sindresorhus.Actions.Authenticate,Is Web Server Reachable,action_external_app,None
+com.sindresorhus.Actions.RemoveNonPrintableCharactersIntent,Remove Non-Printable Characters,action_external_app,Trace Hiding
+com.sindresorhus.Actions.RemoveEmojiIntent,Remove Emoji,action_external_app,Trace Hiding
+com.sindresorhus.Actions.TransformTextIntent,Transform Text,action_external_app,None
+com.tijo.opener.Opener.show-options,Open URL in Opener,action_external_app,None
+com.apple.iBooks.BookAppEntity,Open Book,action_external_app,None
+com.tapbots.Tweetbot.tweet,Tweet with Tweetbot,action_external_app,None
+com.culturedcode.ThingsTouch.addtask,Add ToDo on Things 3,action_external_app,Data Insertion
+com.sindresorhus.Actions.IsShakingDevice,Is Shaking Device,action_external_app,None
+dk.simonbs.DataJar.GetValueIntent,Get DataJar Value,action_external_app,Data Collection
+dk.simonbs.DataJar.SetValueIntent,Set DataJar Value,action_external_app,Resource Control
+com.sindresorhus.Actions.IsCellularDataOn,Is Cellular Data On,action_external_app,None
+com.sindresorhus.Actions.IsBluetoothOnIntent,Is Bluetooth On,action_external_app,None
+com.sindresorhus.Actions.IsConnectedToVPNIntent,Is Connected to VPN,action_external_app,Resource Control
+com.sindresorhus.Actions.IsLowPowerModeIntent,Is Low Power Mode On,action_external_app,None
+com.sindresorhus.Actions.IsSilentModeOnIntent,Is Silent Mode On,action_external_app,None
+com.sindresorhus.Actions.IsDarkModeIntent,Is Dark Mode On,action_external_app,None
+com.sindresorhus.Actions.GetDeviceOrientationIntent,Get Device Orientation,action_external_app,Data Collection
+com.sindresorhus.Actions.GetActionsVersion,Get Actions Version,action_external_app,Data Collection
+com.sindresorhus.Actions.GetBatteryStateIntent,Get Battery State,action_external_app,Data Collection
+com.sindresorhus.Actions.GetDeviceDetailsExtended,Get Device Details Extended,action_external_app,Data Collection
+com.apple.news.TagIntent,Open News,action_external_app,None
+com.omnigroup.OmniFocus2.iPhone.pastetaskpaper,Add TaskPaper to OmniFocus,action_external_app,Data Insertion
+is.workflow.actions.pocket.get,Get Item from Pocket,action_external_app,Data Collection
+com.6X.LockLauncher.RefreshActivityIntent,Refresh Activity,action_external_app,None
+com.adguard.ios.AdGuardVPN.VpnStateIntent,Get VPN State,action_external_app,Data Collection
+dk.simonbs.DataJar.CheckIfValueExistsIntent,Check If Value Exists,action_external_app,None
+com.todoist.ios.CreateTaskIntent,Create Task on Todoist,action_external_app,Data Insertion
+com.leomehlig.today.AddTaskIntent,Add Task on Today,action_external_app,Data Insertion
+com.rivian.ios.consumer.CloseLiftgateIntent,Close Liftgate,action_external_app,None
+com.phocusllp.due.add,Add Reminder on Due,action_external_app,Data Insertion
+io.pushcut.Pushcut.RunShortcutIntent,Run Shortcut on Pushcut,action_external_app,None
+com.rivian.ios.consumer.UnlockDoorsIntent,Unlock Doors,action_external_app,None
+com.microsoft.bing.OpenSydneyIntent,Open Sydney on Bing,action_external_app,None
+com.sindresorhus.Actions.BlurImages,Blur Images,action_external_app,None
+com.alexhay.ToolboxProForShortcuts.AuthenticateIntent,Authenticate,action_external_app,None
+is.workflow.actions.trello.add.card,Add Card on Trello,action_external_app,Data Insertion
+com.apple.iBooks.openin,Open in iBooks,action_external_app,None
+is.workflow.actions.dropbox.open,Open in Dropbox,action_external_app,None
+com.rivian.ios.consumer.LockDoorsIntent,Lock Doors,action_external_app,None
+is.workflow.actions.trello.get,Get Trello,action_external_app,Data Collection
+is.workflow.actions.properties.trello,Get Details of Trello,action_external_app,Data Collection
+com.sindresorhus.Actions.GetAudioPlaybackDestinationIntent,Get Audio Playback Destination,action_external_app,"Data Collection, Resource Control"
+com.sindresorhus.Actions.GetAverageColorOfImage,Get Average Color of Image,action_external_app,Data Collection
+com.sindresorhus.Actions.CreateColorImageIntent,Create Color Image,action_external_app,Data Insertion
+company.thebrowser.ArcMobile2.SearchIntent,Search in Arc Mobile,action_external_app,None
+com.apple.Keynote.KNDocumentPlayIntent,Play Keynote,action_external_app,Resource Control
+com.alexhay.ToolboxProForShortcuts.GetWorkoutsIntent,Get Workouts,action_external_app,Data Collection
+com.rivian.ios.consumer.OpenLiftgateIntent,Open Liftgate,action_external_app,None
+is.workflow.actions.todoist.add,Add Todoist Item,action_external_app,Data Insertion

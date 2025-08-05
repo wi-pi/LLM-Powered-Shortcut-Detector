@@ -1,0 +1,32 @@
+Action Name,Prompt Description,to victim,to others
+is.workflow.actions.airdropdocument,'AirDrop',1,1
+is.workflow.actions.alert,'Show Alert',1,
+com.apple.mobilephone.call,'Call',1,1
+is.workflow.actions.choosefromlist,'Choose from List',1,
+is.workflow.actions.choosefrommenu,'Choose from Menu',1,
+is.workflow.actions.dictatetext,'Dictate Text',1,
+com.apple.facetime.facetime,'FaceTime',1,1
+com.apple.mobileslideshow.StreamShareService,'Post to Shared Album',1,1
+is.workflow.actions.openurl,'Open URLs',1,1
+is.workflow.actions.openxcallbackurl,'Open X-Callback URL',1,1
+is.workflow.actions.output,'Stop and Output',1,
+is.workflow.actions.playsound,'Play Sound',1,
+is.workflow.actions.previewdocument,'Quick Look',1,
+is.workflow.actions.runextension,'Share with Apps',1,1
+is.workflow.actions.runjavascriptonwebpage,'Run JavaScript on Active Safari Tab',1,1
+is.workflow.actions.runsshscript,'Run Script over SSH',1,1
+is.workflow.actions.sendemail,'Send Email',1,1
+is.workflow.actions.sendmessage,'Send Message',1,1
+is.workflow.actions.share,'Share',1,1
+com.apple.mobilenotes.ShowQuickNoteIntent,'Show Quick Note',1,
+is.workflow.actions.showincalendar,'Open in Calendar',1,
+is.workflow.actions.showinstore,'Show in iTunes Store',1,
+is.workflow.actions.shownote,'Open Note',1,
+is.workflow.actions.showresult,'Show Result',1,
+is.workflow.actions.showwebpage,'Show Web View',1,1
+is.workflow.actions.speaktext,'Speak Text',1,
+is.workflow.actions.venmo.pay,'Send Payment',1,1
+is.workflow.actions.viewresult,'View Content Graph',1,
+is.workflow.actions.wallpaper.set,'Set Wallpaper Photo',1,
+net.whatsapp.WhatsApp.openin,'Send Photo via WhatsApp',1,1
+net.whatsapp.WhatsApp.send,'Send WhatsApp Message',1,1

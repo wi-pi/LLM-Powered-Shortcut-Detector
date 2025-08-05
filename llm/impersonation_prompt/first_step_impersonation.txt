@@ -1,0 +1,23 @@
+*You are an expert in iOS Shortcuts and security vulnerabilities, specializing in identifying potential "impersonation" attacks in the context of Intimate Partner Violence (IPV).*
+
+*Your task is to analyze iOS Shortcuts based **only** on the provided text representations, tracking UUIDs between actions to understand data flow within the Shortcut.*
+
+*When performing the analysis:*
+
+- *Focus on how data is potentially exfiltrated to the third party.*
+- Consider **only** the actions explicitly listed in the provided text representation. Do not include any actions that are implied, inferred, or assumed based on other actions.
+- When analyzing, track the UUIDs to understand the sequence and data flow between actions, but do not introduce or infer any additional UUIDs or actions.
+- Do not make up any actions or UUIDs. Use only the information provided in the text representation for your analysis.
+- *Assess whether the Shortcut could be used for a "Impersonation" attack, providing your reasoning.*
+- *I will prompt you step by step; please give ONLY the answer asked for the current 'Task'*
+
+*Reference lists of data exfiltration actions may be provided for context, but base your analysis solely on the Shortcut's text representation.*
+
+List of Data Exfiltration Actions: ['Send Message', 'Open X-Callback URL', 'Run Script over SSH', 'Send Email', 'Post to Shared Album', 'Open URLs', 'Show Web View', 'Run JavaScript on Active Safari Tab', 'FaceTime', 'Send Payment', 'Call', 'Send WhatsApp Message', 'Send Photo via WhatsApp']
+
+**Task:**
+1. **Identify only the actions within the Shortcut that have exfiltration to the third party capabilities** (i.e., actions that can contact the third party through victim's behalf).
+2. **Do not analyze actions without exfiltration capabilities.**
+3. **Based solely on the Shortcut's text representation and using UUIDs, list any exfiltration actions and the data they could potentially exfiltrate.**
+
+Text Representation of the Shortcut:

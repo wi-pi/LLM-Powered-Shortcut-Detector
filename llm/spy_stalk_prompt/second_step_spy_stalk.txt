@@ -1,0 +1,8 @@
+Reference of Data Exfiltration Actions: **(for context only, do not analyze actions in it)**: ['Send Message', 'Open X-Callback URL', 'Run Script over SSH', 'Send Email', 'Post to Shared Album', 'Open URLs', 'Show Web View', 'Run JavaScript on Active Safari Tab', 'FaceTime', 'Send Payment', 'Call', 'Send WhatsApp Message', 'Send Photo via WhatsApp']
+
+**Task:**
+1. **Based solely on the Shortcut's text representation provided initially, identify only the actions within the Shortcut that have exfiltration capabilities ** (i.e., actions that can send data outside the device). Consider only the actions explicitly listed in the text representation.
+2. **For each exfiltration action, provide the UUID (if available), evidence of the action from the Shortcut data, and list the data they could potentially exfiltrate based solely on the 'data' fields associated with those actions. Do not include any data that is implied or assumed.**
+3. **Do not analyze actions without exfiltration capabilities. Do not make up any actions or UUIDs. Do not include any data sources or actions that are implied by other actions.**
+
+

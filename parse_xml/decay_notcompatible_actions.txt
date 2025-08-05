@@ -1,0 +1,10 @@
+{'is.workflow.actions.text.trimwhitespace': None}
+{'com.apple.iBooks.openin': None}
+{'com.apple.AppStore.PageNavigationIntent': None}
+{'com.apple.Home.ToggleIntent': None}
+{'is.workflow.actions.sirikit.donation.handle': None}
+{'is.workflow.actions.sirikit.donation.handle': None}
+{'com.apple.Passbook.DeletePassIntent': None}
+{'com.apple.Passbook.AppleCardBillPayIntent': None}
+is.workflow.actions.splitscreen
+

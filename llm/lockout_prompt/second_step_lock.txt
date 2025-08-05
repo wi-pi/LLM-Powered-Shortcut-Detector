@@ -1,0 +1,8 @@
+**Task:**
+For each **control** identified in the Shortcut's text:
+1. Apply the given formal definition of a lockout/control attack: an attacker manipulating the victim’s device’s physical features or software settings to create psychological distress by gaslighting, confusing, or unsettling the target. This includes actions like changing settings, adding and deleting data without the victim’s knowledge, or otherwise undermining the victim’s normal control over their device.
+2. Consider only actions or combination of actions that clearly match this definition. For example, actions that merely inconvenience or annoy—like playing an unwanted song—should not be categorized as lockout/control unless they directly impede the victim’s ability to use their device or cause a clear sense of confusion or distress in line with the definition provided.
+3. DO NOT OVERTHINK. Do not treat actions that only cause mild annoyance or do not interfere with the user’s normal control—such as playing music or displaying text—as lockout/control.
+4. Conclude your reasoning with a definitive statement: "Yes, this shortcut constitutes a lockout/control attack." or "No, this shortcut does not constitute a lockout/control attack."
+
+Note: If there is no data included in the exfiltration actions, it is not considered harmful. Focus on if the actions would actually be conducted and cause harm.
