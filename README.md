@@ -9,104 +9,79 @@ This work is based on the paper: **"Abusability of Automation Apps in Intimate P
 
 ## Background
 
-[cite_start]Automation applications like iOS Shortcuts, Tasker, and IFTTT are powerful tools that allow users to program new functionalities on their smartphones. [cite: 1101, 1102] [cite_start]While designed for productivity, these "dual-use" apps can be repurposed by abusers, especially in IPV scenarios, to monitor, impersonate, and control their victims. [cite: 1107] [cite_start]Maliciously crafted automation recipes can function like spyware but are difficult to detect because they are created within legitimate, often pre-installed, applications. [cite: 1140, 1141]
+Automation applications like iOS Shortcuts, Tasker, and IFTTT are powerful tools that allow users to program new functionalities on their smartphones. While designed for productivity, these "dual-use" apps can be repurposed by abusers, especially in IPV scenarios, to monitor, impersonate, and control their victims. Maliciously crafted automation recipes can function like spyware but are difficult to detect because they are created within legitimate, often pre-installed, applications.
 
 This project provides a tool to systematically analyze iOS Shortcuts recipes and identify those with the potential for abuse.
 
 ## Features
 
--   [cite_start]**LLM-Powered Detection:** Leverages a Large Language Model to analyze the text representation of Shortcuts recipes and identify potentially harmful functionalities. [cite: 1159, 1529]
--   **Multi-Faceted Attack Detection:** The detector is designed to identify four types of Technology-Facilitated Abuse (TFA) attacks:
-    -   [cite_start]**Surveillance:** Secretly monitoring or collecting information from a victim's device. [cite: 1238]
-    -   [cite_start]**Impersonation:** Sending information from a victim's device to a third party without the victim's consent. [cite: 1240, 1345]
-    -   [cite_start]**Overloading:** Repeatedly triggering actions on a victim's device to cause a denial of service. [cite: 1242]
-    -   [cite_start]**Lockout/Control:** Manipulating a victim's device settings to cause confusion or anxiety. [cite: 1244]
--   [cite_start]**Scalable Analysis:** The pipeline is designed to process and analyze a large number of Shortcuts recipes. [cite: 1612]
+- **LLM-Powered Detection:** Leverages a Large Language Model to analyze the text representation of Shortcuts recipes and identify potentially harmful functionalities.
+- **Multi-Faceted Attack Detection:** The detector is designed to identify four types of Technology-Facilitated Abuse (TFA) attacks:
+  - **Surveillance:** Secretly monitoring or collecting information from a victim's device.
+  - **Impersonation:** Sending information from a victim's device to a third party without the victim's consent.
+  - **Overloading:** Repeatedly triggering actions to cause a denial of service on a victim's device.
+  - **Lockout/Control:** Manipulating device settings to cause confusion or anxiety.
+- **Scalable Analysis:** The pipeline can process and analyze a large number of Shortcuts recipes.
 
 ## Getting Started
 
 ### Prerequisites
 
--   Python 3.8+
--   `pip` for installing Python packages
--   An API key for a Large Language Model (e.g., OpenAI's GPT-4o or a self-hosted model like Qwen2.5-Coder)
+- Python 3.8+
+- `pip` for installing dependencies
+- An API key for a Large Language Model (e.g., OpenAI's GPT-4o or a self-hosted model)
 
 ### Installation
 
-1.  **Clone the repository:**
-    ```bash
-    git clone [https://github.com/uwis-privacy/llm-powered-shortcut-detector.git](https://github.com/uwis-privacy/llm-powered-shortcut-detector.git)
-    cd llm-powered-shortcut-detector
-    ```
+1. **Clone the repository:**
 
-2.  **Install dependencies:**
-    ```bash
-    pip install -r requirements.txt
-    ```
-    *(Note: The `requirements.txt` file would likely include libraries such as `requests`, `pyyaml`, `pandas`, and a client library for the LLM you choose to use.)*
+   ```bash
+   git clone https://github.com/uwis-privacy/llm-powered-shortcut-detector.git
+   cd llm-powered-shortcut-detector
+   ```
 
-3.  **Configure your LLM API Key:**
-    Create a `.env` file in the root directory and add your API key:
-    ```
-    OPENAI_API_KEY="your-api-key-here"
-    ```
+2. **Install dependencies:**
+
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+3. **Configure your LLM API key:**
+
+   Create a `.env` file and add:
+
+   ```env
+   OPENAI_API_KEY="your-api-key-here"
+   ```
 
 ## Usage
 
-The main driver script, `driver.py`, orchestrates the entire detection pipeline. The pipeline consists of data preparation, filtering, and LLM-based analysis.
+The main script, `driver.py`, orchestrates the detection pipeline.
 
-### 1. Data Preparation
+### Single Shortcut Analysis
 
-The detector works with Shortcuts recipes in iCloud link. 
-
-### 2. Running the Detector (`driver.py`)
-
-The `driver.py` script likely takes the following arguments:
-
--   An input directory containing the XML representations of the Shortcuts.
--   An output directory to store the analysis results.
--   The type of attack to scan for.
-
-**Example Usage:**
-#### Single Shortcut Analysis
-
-To analyze a single shortcut, you can call the `main` function in `driver.py` with the iCloud link and `type='single'`.
-
-**Example:**
-
-```python
-if __name__ == "__main__":
-    main('https://www.icloud.com/shortcuts/12312312345', 'single')
+```bash
+python driver.py --type single --input https://www.icloud.com/shortcuts/12312312345
 ```
-#### Batch Shortcut Analysis
 
-To analyze multiple shortcuts in a batch, you can call the `main` function with a list of iCloud links and `type='batch'`.
+### Batch Shortcut Analysis
 
-**Example:**
-
-```python
-if __name__ == "__main__":
-    main(['https://www.icloud.com/shortcuts/12312312345', 'https://www.icloud.com/shortcuts/12312312245'], 'batch')
+```bash
+python driver.py --type batch --input https://www.icloud.com/shortcuts/12312312345 https://www.icloud.com/shortcuts/12312312245
 ```
 
 ## How it Works
-The detection pipeline follows these steps:
 
-1. iCloud Link Parsing: The script takes an iCloud link (or a list of links) and downloads the shortcut data.
-
-2. XML Conversion: The downloaded shortcut is converted into a machine-readable XML format.
-
-3. YAML Conversion: The XML file is then parsed into a more concise YAML format. This is done to retain the essential information, like action UUIDs and metadata, in a more human-readable format.
-
-4. Code-Based Filtering: A preliminary code-based filter is used to identify recipes that are potentially exploitable. This is done by checking for the presence of attack-specific operations.
-
-5. LLM-Powered Analysis: The filtered recipes are then passed to the Groq LLM-based detector. The detector uses a multi-round, step-by-step prompting strategy for each of the four attack scenarios to minimize hallucinations and produce a detailed analysis.
-
-6. Results: The final output is a set of text files for each shortcut, with each file containing the analysis for a specific attack scenario.
+1. **iCloud Link Parsing:** Download shortcuts data.
+2. **XML Conversion:** Convert downloaded shortcuts to XML.
+3. **YAML Conversion:** Parse XML into YAML for readability.
+4. **Code-Based Filtering:** Identify potentially exploitable recipes via static filters.
+5. **LLM-Powered Analysis:** Use an LLM to analyze filtered recipes with a structured prompting strategy.
+6. **Results:** Output text files containing analysis for each attack scenario.
 
 ## Directory Structure
-When you run the `driver.py` script, it will create a number of directories to store the intermediate and final results. The directory structure will look something like this:
 
+```text
 .
 ├── shortcuts_xml_batch_{timestamp}/
 │   ├── {shortcut1}.xml
@@ -121,22 +96,19 @@ When you run the `driver.py` script, it will create a number of directories to s
 │   ├── {shortcut1}_spy.txt
 │   ├── {shortcut1}_overload.txt
 │   ├── {shortcut1}_lockout.txt
-│   ├── {shortcut1}_impersonation.txt
-│   ├── {shortcut2}_spy.txt
-│   ├── ...
+│   └── {shortcut1}_impersonation.txt
 └── {file_or_folder_name}_result_categories_{timestamp}/
-
-- `shortcuts_xml_batch_{timestamp}`: Contains the downloaded shortcuts in XML format. 
-- `shortcuts_yaml_batch_{timestamp}`: Contains the shortcuts converted to YAML format. 
-- `shortcuts_yaml_batch_{timestamp}_analysis_{timestamp}`: Contains the results of the code-based filtering. 
-- `shortcuts_yaml_batch_{timestamp}_results`: Contains the final analysis from the LLM for each shortcut and each attack scenario. 
-- `{file_or_folder_name}_result_categories_{timestamp}`: Contains a summary of the analysis results.
+```
 
 ## Citation
+
 If you use this work, please cite the original paper:
-```
+
+```bibtex
 TBD
 ```
 
 ## License
+
 This project is licensed under the MIT License. See the `LICENSE` file for details.
+
